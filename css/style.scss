@@ -1,0 +1,255 @@
+@import "./config";
+@import "./utilities";
+
+nav {
+  .nav-wrapper {
+    .brand-logo {
+      img {
+        width: 40px;
+        margin-right: 20px !important;
+      }
+      i {
+        margin-right: 20px !important;
+        font-size: 48px;
+      }
+    }
+    padding-left: 15px;
+    .nav-mobile {
+      a {
+        padding: 0 1.3rem;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+.tabs {
+  overflow: hidden;
+}
+
+.sidenav {
+  li {
+    width: 100% !important;
+    &:first-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.android-float {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+}
+
+.heading {
+  background: url("../img/coder.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  &__title {
+    margin: 0;
+    padding: 70px;
+    h4 {
+      font-family: "roboto-thin";
+      margin: 0 !important;
+      span {
+        font-family: "roboto-light";
+      }
+    }
+  }
+}
+
+.project {
+  &__title {
+    padding: 20px 50px;
+    margin: 0 !important;
+  }
+  .cards {
+    font-family: "roboto-light";
+    justify-content: space-around;
+    .card-panel {
+      margin: 30px;
+      padding: 30px 15px;
+    }
+    .project {
+      &__talk {
+        display: flex;
+        justify-content: center;
+        h5 {
+          font-family: "roboto-light";
+        }
+        i {
+          font-size: 72px;
+          text-align: center;
+        }
+      }
+    }
+    .row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-top: 26px;
+      .card {
+        .card-reveal {
+          background: #2195f377;
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.service {
+  .collection {
+    margin-top: 25px;
+    padding: 0;
+    font-family: "roboto-light";
+    .collection-header {
+      font-family: "roboto-bold";
+    }
+    li {
+      display: flex;
+    }
+  }
+  &__description {
+    h4 {
+      font-family: "roboto-light";
+    }
+    h5 {
+      font-family: "roboto-thin";
+    }
+    a {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 30px auto;
+      width: 150px;
+    }
+  }
+}
+
+.competence {
+  .hero-img {
+    width: 100vw;
+    margin: 5px 0;
+    img {
+      width: 100%;
+      height: 550px;
+    }
+  }
+  .service-container {
+    .collapsible {
+      &-body {
+        font-family: "roboto-thin";
+      }
+    }
+    display: flex;
+    justify-content: space-around;
+    .hardskills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .card-panel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        font-family: "roboto-light";
+      }
+    }
+    .softskills {
+      font-family: "roboto-light";
+    }
+  }
+}
+
+.about {
+  &__hero {
+    position: relative;
+    height: 200px;
+    background-image: url("../img/mebackdrop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 50px;
+      bottom: -100px;
+      border-radius: 100%;
+    }
+  }
+  &__content {
+    margin-top: 125px;
+    & > h3 {
+      margin-left: 150px;
+    }
+    .mydescription {
+      margin-left: 200px;
+      font-family: "roboto-light";
+      .description-action {
+        margin: 25px auto;
+      }
+      .call-talk {
+        font-family: "roboto-thin";
+        margin: 25px auto;
+      }
+      .sylvia {
+        img {
+          width: 100px;
+        }
+        a {
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 50px;
+          margin: 10px 0;
+        }
+      }
+    }
+    .curriculum {
+      margin-left: 200px;
+      margin-bottom: 50px;
+      h5 {
+        font-family: "roboto-thin";
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin: 25px 0;
+      }
+    }
+  }
+}
+.chatzone {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

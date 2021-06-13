@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "roboto-thin";
+  src: url("../Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "roboto-italic";
+  src: url("../Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("../Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-reg";
+  src: url("../Roboto/Roboto-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+nav .nav-wrapper {
+  padding-left: 15px;
+}
+nav .nav-wrapper .brand-logo img {
+  width: 40px;
+  margin-right: 20px !important;
+}
+nav .nav-wrapper .brand-logo i {
+  margin-right: 20px !important;
+  font-size: 48px;
+}
+nav .nav-wrapper .nav-mobile a {
+  padding: 0 1.3rem;
+  border-radius: 100%;
+}
+
+.tabs {
+  overflow: hidden;
+}
+
+.sidenav li {
+  width: 100% !important;
+}
+.sidenav li:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav li:first-child img {
+  width: 100% !important;
+}
+
+.android-float {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+}
+
+.heading {
+  background: url("../img/coder.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+}
+.heading__title {
+  margin: 0;
+  padding: 70px;
+}
+.heading__title h4 {
+  font-family: "roboto-thin";
+  margin: 0 !important;
+}
+.heading__title h4 span {
+  font-family: "roboto-light";
+}
+
+.project__title {
+  padding: 20px 50px;
+  margin: 0 !important;
+}
+.project .cards {
+  font-family: "roboto-light";
+  justify-content: space-around;
+}
+.project .cards .card-panel {
+  margin: 30px;
+  padding: 30px 15px;
+}
+.project .cards .project__talk {
+  display: flex;
+  justify-content: center;
+}
+.project .cards .project__talk h5 {
+  font-family: "roboto-light";
+}
+.project .cards .project__talk i {
+  font-size: 72px;
+  text-align: center;
+}
+.project .cards .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 26px;
+}
+.project .cards .row .card .card-reveal {
+  background: #2195f377;
+  color: white;
+  font-size: 20px;
+}
+
+.service .collection {
+  margin-top: 25px;
+  padding: 0;
+  font-family: "roboto-light";
+}
+.service .collection .collection-header {
+  font-family: "roboto-bold";
+}
+.service .collection li {
+  display: flex;
+}
+.service__description h4 {
+  font-family: "roboto-light";
+}
+.service__description h5 {
+  font-family: "roboto-thin";
+}
+.service__description a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+  width: 150px;
+}
+
+.competence .hero-img {
+  width: 100vw;
+  margin: 5px 0;
+}
+.competence .hero-img img {
+  width: 100%;
+  height: 550px;
+}
+.competence .service-container {
+  display: flex;
+  justify-content: space-around;
+}
+.competence .service-container .collapsible-body {
+  font-family: "roboto-thin";
+}
+.competence .service-container .hardskills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.competence .service-container .hardskills .card-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-family: "roboto-light";
+}
+.competence .service-container .softskills {
+  font-family: "roboto-light";
+}
+
+.about__hero {
+  position: relative;
+  height: 200px;
+  background-image: url("../img/mebackdrop.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.about__hero img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50px;
+  bottom: -100px;
+  border-radius: 100%;
+}
+.about__content {
+  margin-top: 125px;
+}
+.about__content > h3 {
+  margin-left: 150px;
+}
+.about__content .mydescription {
+  margin-left: 200px;
+  font-family: "roboto-light";
+}
+.about__content .mydescription .description-action {
+  margin: 25px auto;
+}
+.about__content .mydescription .call-talk {
+  font-family: "roboto-thin";
+  margin: 25px auto;
+}
+.about__content .mydescription .sylvia img {
+  width: 100px;
+}
+.about__content .mydescription .sylvia a {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin: 10px 0;
+}
+.about__content .curriculum {
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+.about__content .curriculum h5 {
+  font-family: "roboto-thin";
+}
+.about__content .curriculum a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin: 25px 0;
+}
+
+.chatzone {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 50px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
