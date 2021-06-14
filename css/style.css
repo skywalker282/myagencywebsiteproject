@@ -28,10 +28,6 @@ body {
   overflow-x: hidden;
 }
 
-.hidden {
-  display: none;
-}
-
 nav .nav-wrapper {
   padding-left: 15px;
 }
@@ -248,16 +244,24 @@ nav .nav-wrapper .nav-mobile a {
   margin: 25px 0;
 }
 
-.chatzone {
+.chat-zone {
+  z-index: 1200;
   position: fixed;
   bottom: 0px;
   right: 0px;
   left: 0px;
   top: 0px;
-  padding: 50px 15px;
+  padding: 100px 35px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+}
+.chat-zone iframe {
+  border: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,10 +61,16 @@ document.addEventListener("DOMContentLoaded", function () {
 //chat open handling
 
 const startChat = document.querySelectorAll(".chat");
-const chatZone = document.querySelector(".chatzone");
+const chatZone = document.querySelector(".chat-zone");
+
+chatZone.addEventListener("click", (event) => {
+  event.stopPropagation();
+  chatZone.classList.add("hidden");
+});
 
 startChat.forEach((chat) => {
   chat.addEventListener("click", (event) => {
+    event.preventDefault();
     chatZone.classList.remove("hidden");
   });
 });
