@@ -1,0 +1,134 @@
+@import "./_config.scss";
+@import "./_utilities.scss";
+
+nav {
+  .nav-wrapper {
+    .brand-logo {
+      span {
+        font-size: 24px;
+        vertical-align: center;
+        font-family: "roboto-light";
+      }
+      img {
+        width: 40px;
+        margin-right: 20px !important;
+      }
+    }
+    padding-left: 15px;
+    .nav-mobile {
+      a {
+      }
+    }
+  }
+}
+
+.heading {
+  background: url("../img/coder.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  &__title {
+    margin: 0;
+    padding: 70px;
+    h4 {
+      font-family: "roboto-thin";
+      margin: 0 !important;
+      span {
+        font-family: "roboto-light";
+      }
+    }
+  }
+}
+
+.heading {
+  background: url("../img/coder.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  .overlay {
+    background-color: #2195f33d;
+    .heading {
+      &__title {
+        margin: 0;
+        padding: 70px;
+        h4 {
+          font-family: "roboto-thin";
+          margin: 0 !important;
+          span {
+            font-family: "roboto-light";
+          }
+        }
+        .heading {
+          &__action {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 35px 0;
+            a {
+              margin-right: 15px;
+              font-size: 28px;
+              font-family: "roboto-light";
+              padding: 10px 15px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  .me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h4 {
+      text-align: center;
+      font-family: "roboto-light";
+      &:first-child {
+        margin: 50px auto;
+      }
+    }
+    h6 {
+      text-align: center;
+      font-family: "roboto-thin";
+      margin: 0;
+    }
+    .card-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .detail {
+    padding-top: 50px;
+    .why-block {
+      display: flex;
+      align-items: flex-start;
+      i {
+        font-size: 50px;
+      }
+      h4 {
+        margin-top: 0;
+        font-family: "roboto-bold";
+      }
+      p {
+        font-family: "roboto-thin";
+        font-size: 20px;
+      }
+    }
+  }
+}

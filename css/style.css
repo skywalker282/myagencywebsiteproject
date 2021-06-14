@@ -31,19 +31,15 @@ body {
 nav .nav-wrapper {
   padding-left: 15px;
 }
+nav .nav-wrapper .brand-logo span {
+  font-size: 24px;
+  vertical-align: center;
+  font-family: "roboto-light";
+}
 nav .nav-wrapper .brand-logo img {
   width: 40px;
   margin-right: 20px !important;
 }
-nav .nav-wrapper .brand-logo i {
-  margin-right: 20px !important;
-  font-size: 48px;
-}
-nav .nav-wrapper .nav-mobile a {
-  padding: 0 1.3rem;
-  border-radius: 100%;
-}
-
 .tabs {
   overflow: hidden;
 }
@@ -58,17 +54,6 @@ nav .nav-wrapper .nav-mobile a {
 }
 .sidenav li:first-child img {
   width: 100% !important;
-}
-
-.android-float {
-  position: fixed;
-  bottom: 25px;
-  right: 15px;
-  padding: 15px;
-  font-size: 25px;
-  border-radius: 100%;
-  cursor: pointer;
-  z-index: 900;
 }
 
 .heading {
@@ -262,6 +247,17 @@ nav .nav-wrapper .nav-mobile a {
 
 .hidden {
   display: none;
+}
+
+.android-float {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
 }
 
 /*# sourceMappingURL=style.css.map */

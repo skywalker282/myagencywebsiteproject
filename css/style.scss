@@ -3,20 +3,19 @@
 nav {
   .nav-wrapper {
     .brand-logo {
+      span {
+        font-size: 24px;
+        vertical-align: center;
+        font-family: "roboto-light";
+      }
       img {
         width: 40px;
         margin-right: 20px !important;
-      }
-      i {
-        margin-right: 20px !important;
-        font-size: 48px;
       }
     }
     padding-left: 15px;
     .nav-mobile {
       a {
-        padding: 0 1.3rem;
-        border-radius: 100%;
       }
     }
   }
@@ -38,17 +37,6 @@ nav {
       }
     }
   }
-}
-
-.android-float {
-  position: fixed;
-  bottom: 25px;
-  right: 15px;
-  padding: 15px;
-  font-size: 25px;
-  border-radius: 100%;
-  cursor: pointer;
-  z-index: 900;
 }
 
 .heading {
