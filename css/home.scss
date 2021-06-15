@@ -29,32 +29,18 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
-  &__title {
-    margin: 0;
-    padding: 70px;
-    h4 {
-      font-family: "roboto-thin";
-      margin: 0 !important;
-      span {
-        font-family: "roboto-light";
-      }
-    }
-  }
-}
-
-.heading {
-  background: url("../img/coder.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
   .overlay {
     background-color: #2195f33d;
     .heading {
       &__title {
         margin: 0;
         padding: 70px;
+        @media screen and (max-width: 840px) {
+          h4,
+          h2 {
+            text-align: center;
+          }
+        }
         h4 {
           font-family: "roboto-thin";
           margin: 0 !important;
@@ -63,6 +49,14 @@ nav {
           }
         }
         .heading {
+          @media screen and (max-width: 840px) {
+            &__action {
+              justify-content: center;
+              a {
+                margin: 15px;
+              }
+            }
+          }
           &__action {
             display: flex;
             align-items: center;
@@ -85,16 +79,22 @@ nav {
 .introduction {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 25px 0;
+  width: 100%;
   .me {
     display: flex;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 700px) {
+      width: 100vw !important;
+    }
     h4 {
       text-align: center;
       font-family: "roboto-light";
       &:first-child {
         margin: 50px auto;
+        font-family: "roboto-bold";
       }
     }
     h6 {
@@ -115,9 +115,38 @@ nav {
   }
   .detail {
     padding-top: 50px;
+    @media screen and (max-width: 700px) {
+      width: 100vw !important;
+    }
     .why-block {
       display: flex;
       align-items: flex-start;
+      @media screen and (max-width: 1000px) {
+        width: 100% !important;
+      }
+      @media screen and (max-width: 600px) {
+        i {
+          width: min-content;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+          font-size: 24px import !important;
+          text-align: center;
+          margin: 10px;
+        }
+        p {
+          font-size: 16px !important;
+          text-align: center;
+        }
+        i {
+          font-size: 30px;
+          margin: 25px auto;
+        }
+      }
       i {
         font-size: 50px;
       }
@@ -128,6 +157,80 @@ nav {
       p {
         font-family: "roboto-thin";
         font-size: 20px;
+      }
+    }
+  }
+}
+
+.media {
+  padding: 30px 0;
+  background: rgb(226, 225, 232);
+  background: radial-gradient(
+    circle,
+    rgba(226, 225, 232, 1) 17%,
+    rgba(33, 149, 243, 1) 97%
+  );
+  h3 {
+    text-align: center;
+    font-family: "roboto-bold";
+  }
+  & > p {
+    font-family: "roboto-light";
+    font-size: 20px;
+    text-align: center;
+    margin: 25px auto;
+  }
+  .article-block {
+    margin: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-panel {
+      padding: 0;
+      margin: 15px;
+      @media screen and (max-width: 1120px) and (min-width: 600px) {
+        width: 35%;
+      }
+      @media screen and (max-width: 600px) {
+        width: 75%;
+      }
+      img {
+        width: 100% !important;
+        height: 40%;
+      }
+      .card-body {
+        padding: 10px;
+        h6 {
+          font-family: "roboto-light";
+        }
+        .title {
+          font-size: 14px;
+          font-family: "roboto-bold";
+        }
+        .source {
+          font-size: 12px;
+          font-family: "roboto-bold";
+        }
+        .more {
+          border-radius: 3px;
+          padding: 5px 10px;
+          color: #2195f3;
+          &:hover {
+            color: white;
+            background-color: #2195f3;
+          }
+        }
+        p {
+          font-family: "roboto-thin";
+          font-size: 14px;
+          height: 30%;
+        }
+        a {
+          display: block;
+          font-family: "roboto-bold";
+          text-decoration: none;
+          margin: 15px 0;
+        }
       }
     }
   }

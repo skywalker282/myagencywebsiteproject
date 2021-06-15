@@ -74,3 +74,31 @@ startChat.forEach((chat) => {
     chatZone.classList.remove("hidden");
   });
 });
+
+//info cards
+const mediaZone = document.querySelector(".article-block");
+
+fetch(
+  "https://gnews.io/api/v4/search?q=africa%20AND%20investment&token=061ecf3ca67a9a953ca6e69439135033"
+)
+  .then((data) => {
+    return data.json();
+  })
+  .then((res) => {
+    console.log(res);
+    res.articles = res.articles.slice(0, 9);
+    res.articles.forEach((article) => {
+      let newArticle = document.createElement("div");
+      newArticle.classList.add("col", "s12", "m3", "card-panel");
+      newArticle.innerHTML = `<img src=${article.image} alt="info">
+      <div class="card-body">
+          <h6 class="grey-text text-darken-1 title">${article.title}</h6>
+          <a class="blue-text source" href=${article.url}>${
+        article.source.name
+      }</a>
+          <p>${article.description.slice(0, 110) + "..."}</p>
+          <a class="right more" href=${article.url}>Read more >></a>
+      </div>`;
+      mediaZone.appendChild(newArticle);
+    });
+  });

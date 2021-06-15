@@ -229,20 +229,5 @@ nav {
     }
   }
 }
-.chat-zone {
-  z-index: 1200;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  padding: 100px 35px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  iframe {
-    border: none;
-  }
-}
 
 @import "./utilities";

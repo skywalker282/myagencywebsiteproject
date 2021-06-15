@@ -28,6 +28,22 @@ body {
   overflow-x: hidden;
 }
 
+.chat-zone {
+  z-index: 1200;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 100px 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.chat-zone iframe {
+  border: none;
+}
+
 .hidden {
   display: none;
 }
@@ -63,26 +79,6 @@ nav .nav-wrapper .brand-logo img {
   background-position: center;
   padding: 0;
 }
-.heading__title {
-  margin: 0;
-  padding: 70px;
-}
-.heading__title h4 {
-  font-family: "roboto-thin";
-  margin: 0 !important;
-}
-.heading__title h4 span {
-  font-family: "roboto-light";
-}
-
-.heading {
-  background: url("../img/coder.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0;
-}
 .heading .overlay {
   background-color: #2195f33d;
 }
@@ -90,12 +86,26 @@ nav .nav-wrapper .brand-logo img {
   margin: 0;
   padding: 70px;
 }
+@media screen and (max-width: 840px) {
+  .heading .overlay .heading__title h4,
+.heading .overlay .heading__title h2 {
+    text-align: center;
+  }
+}
 .heading .overlay .heading__title h4 {
   font-family: "roboto-thin";
   margin: 0 !important;
 }
 .heading .overlay .heading__title h4 span {
   font-family: "roboto-light";
+}
+@media screen and (max-width: 840px) {
+  .heading .overlay .heading__title .heading__action {
+    justify-content: center;
+  }
+  .heading .overlay .heading__title .heading__action a {
+    margin: 15px;
+  }
 }
 .heading .overlay .heading__title .heading__action {
   display: flex;
@@ -114,12 +124,19 @@ nav .nav-wrapper .brand-logo img {
 .introduction {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 25px 0;
+  width: 100%;
 }
 .introduction .me {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  .introduction .me {
+    width: 100vw !important;
+  }
 }
 .introduction .me h4 {
   text-align: center;
@@ -127,6 +144,7 @@ nav .nav-wrapper .brand-logo img {
 }
 .introduction .me h4:first-child {
   margin: 50px auto;
+  font-family: "roboto-bold";
 }
 .introduction .me h6 {
   text-align: center;
@@ -146,9 +164,44 @@ nav .nav-wrapper .brand-logo img {
 .introduction .detail {
   padding-top: 50px;
 }
+@media screen and (max-width: 700px) {
+  .introduction .detail {
+    width: 100vw !important;
+  }
+}
 .introduction .detail .why-block {
   display: flex;
   align-items: flex-start;
+}
+@media screen and (max-width: 1000px) {
+  .introduction .detail .why-block {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introduction .detail .why-block i {
+    width: min-content;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introduction .detail .why-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction .detail .why-block h4 {
+    font-size: 24px import !important;
+    text-align: center;
+    margin: 10px;
+  }
+  .introduction .detail .why-block p {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .introduction .detail .why-block i {
+    font-size: 30px;
+    margin: 25px auto;
+  }
 }
 .introduction .detail .why-block i {
   font-size: 50px;
@@ -160,6 +213,80 @@ nav .nav-wrapper .brand-logo img {
 .introduction .detail .why-block p {
   font-family: "roboto-thin";
   font-size: 20px;
+}
+
+.media {
+  padding: 30px 0;
+  background: #e2e1e8;
+  background: radial-gradient(circle, #e2e1e8 17%, #2195f3 97%);
+}
+.media h3 {
+  text-align: center;
+  font-family: "roboto-bold";
+}
+.media > p {
+  font-family: "roboto-light";
+  font-size: 20px;
+  text-align: center;
+  margin: 25px auto;
+}
+.media .article-block {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.media .article-block .card-panel {
+  padding: 0;
+  margin: 15px;
+}
+@media screen and (max-width: 1120px) and (min-width: 600px) {
+  .media .article-block .card-panel {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .media .article-block .card-panel {
+    width: 75%;
+  }
+}
+.media .article-block .card-panel img {
+  width: 100% !important;
+  height: 40%;
+}
+.media .article-block .card-panel .card-body {
+  padding: 10px;
+}
+.media .article-block .card-panel .card-body h6 {
+  font-family: "roboto-light";
+}
+.media .article-block .card-panel .card-body .title {
+  font-size: 14px;
+  font-family: "roboto-bold";
+}
+.media .article-block .card-panel .card-body .source {
+  font-size: 12px;
+  font-family: "roboto-bold";
+}
+.media .article-block .card-panel .card-body .more {
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: #2195f3;
+}
+.media .article-block .card-panel .card-body .more:hover {
+  color: white;
+  background-color: #2195f3;
+}
+.media .article-block .card-panel .card-body p {
+  font-family: "roboto-thin";
+  font-size: 14px;
+  height: 30%;
+}
+.media .article-block .card-panel .card-body a {
+  display: block;
+  font-family: "roboto-bold";
+  text-decoration: none;
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=home.css.map */
