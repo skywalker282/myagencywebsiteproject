@@ -11,6 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var collapsibleElems = document.querySelectorAll(".collapsible");
   var collapsibleInstances = M.Collapsible.init(collapsibleElems, {});
+
+  var scrollspyElems = document.querySelectorAll(".scrollspy");
+  var scrollspyInstances = M.ScrollSpy.init(scrollspyElems, {});
+
+  var domSteppers = document.querySelectorAll(".stepper.demos");
+  for (var i = 0, len = domSteppers.length; i < len; i++) {
+    var domStepper = domSteppers[i];
+    new MStepper(domStepper);
+  }
+  var formElems = document.querySelectorAll("select");
+  var formInstances = M.FormSelect.init(formElems, {});
+
+  var dateElems = document.querySelectorAll(".datepicker");
+  var dateInstances = M.Datepicker.init(dateElems, {});
+
+  var timeElems = document.querySelectorAll(".timepicker");
+  var timeInstances = M.Timepicker.init(timeElems, {});
 });
 
 //Set the chat button on every screen
@@ -78,8 +95,10 @@ startChat.forEach((chat) => {
 //info cards
 const mediaZone = document.querySelector(".article-block");
 
+let random = parseInt(Math.random() * 10);
+
 fetch(
-  "https://gnews.io/api/v4/search?q=africa%20AND%20investment&token=061ecf3ca67a9a953ca6e69439135033"
+  `https://gnews.io/api/v4/search?q=africa%20AND%20investment&page=${random}&token=061ecf3ca67a9a953ca6e69439135033`
 )
   .then((data) => {
     return data.json();
@@ -102,3 +121,18 @@ fetch(
       mediaZone.appendChild(newArticle);
     });
   });
+
+function checkEmailDB(destroyFeedback) {
+  setTimeout(function () {
+    destroyFeedback(true);
+  }, 1000);
+}
+
+//progate event inside link children
+document.querySelectorAll(".collection li").forEach((item) => {
+  item.addEventListener("click", (event) => {
+    item.childNodes.forEach((link) => {
+      link.click();
+    });
+  });
+});
