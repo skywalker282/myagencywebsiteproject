@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "roboto-thin";
+  src: url("../Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "roboto-bold";
+  src: url("../Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "roboto-italic";
+  src: url("../Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: "roboto-light";
+  src: url("../Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "roboto-reg";
+  src: url("../Roboto/Roboto-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  z-index: 3000;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+  box-shadow: inset 0 0 5px #fff;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2196f3;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+.chat-zone {
+  z-index: 1200;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 100px 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.chat-zone iframe {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.android-float {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+}
+
+nav .nav-wrapper {
+  padding-left: 15px;
+}
+nav .nav-wrapper .brand-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+nav .nav-wrapper .brand-logo span {
+  font-size: 18px;
+  font-family: "roboto-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 3px 5px;
+}
+nav .nav-wrapper .brand-logo .first {
+  background-color: #fff;
+  border-radius: 5px 0px 0px 5px;
+}
+nav .nav-wrapper .brand-logo .second {
+  background-color: #2196f3;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #fff;
+}
+nav .nav-wrapper .brand-logo img {
+  width: 40px;
+  margin-right: 20px !important;
+}
+nav .nav-wrapper .nav-mobile a {
+  font-family: "roboto-light";
+}
+
+.appointment {
+  padding: 50px 20px 100px;
+  background: #2195f3;
+  background: radial-gradient(circle, #2195f3 0%, #e2e1e8 100%);
+}
+.appointment h3 {
+  text-align: center;
+  font-family: "roboto-light";
+  margin: 0;
+  margin-bottom: 25px;
+}
+.appointment p {
+  font-size: 24px;
+  font-family: "roboto-thin";
+  text-align: center;
+  margin-bottom: 25px;
+}
+.appointment .step-content input {
+  font-family: "roboto-light";
+}
+.appointment .step-content input:hover {
+  border-color: #2196f3 !important;
+}
+.appointment .step-content input:focus {
+  border-color: #2196f3 !important;
+}
+.appointment .step-content label {
+  font-family: "roboto-light" !important;
+}
+.appointment .step-content span {
+  color: #2196f3 !important;
+  font-family: "roboto-thin" !important;
+}
+.appointment .step-content h5 {
+  text-align: center;
+  font-family: "roboto-light";
+}
+.appointment .step-content p {
+  font-size: 18px;
+  font-family: "roboto-thin";
+  text-align: justify;
+  margin: 15px 0;
+}
+.appointment .step-content .switch {
+  display: flex;
+  justify-content: center;
+}
+.appointment .step-content .switch label {
+  font-size: 18px;
+  font-family: "roboto-light";
+}
+.appointment .step-content .datepicker-date-display {
+  background-color: #2196f3;
+}
+.appointment .step-content .timepicker-tick {
+  border-color: #2196f3;
+}
+.appointment .step-content .timepicker-tick.active {
+  background-color: #2196f3;
+}
+.appointment .step-content .timepicker-digital-display {
+  background-color: #2196f3;
+}
+.appointment .step-content .datepicker-cancel,
+.appointment .step-content .datepicker-clear,
+.appointment .step-content .datepicker-today,
+.appointment .step-content .datepicker-done {
+  color: #2196f3;
+}
+.appointment .step-content .datepicker-table td.is-selected {
+  background-color: #2196f3;
+}
+.appointment .step-content .datepicker-table td.is-today {
+  color: #2196f3;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+}
+footer .col h4 {
+  font-family: "roboto-light";
+}
+footer .col p,
+footer .col li {
+  font-size: 18px;
+  font-family: "roboto-thin";
+  text-align: center;
+}
+footer .col a {
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=appointment.css.map */

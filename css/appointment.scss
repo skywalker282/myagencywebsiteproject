@@ -1,0 +1,146 @@
+@import "./_config.scss";
+@import "./_utilities.scss";
+
+nav {
+  .nav-wrapper {
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      span {
+        font-size: 18px;
+        font-family: "roboto-bold";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 3px 5px;
+      }
+      .first {
+        background-color: $front;
+        border-radius: 5px 0px 0px 5px;
+      }
+      .second {
+        background-color: $primary;
+        border-radius: 0px 5px 5px 0px;
+        border: 1px solid $front;
+      }
+      img {
+        width: 40px;
+        margin-right: 20px !important;
+      }
+    }
+    padding-left: 15px;
+    .nav-mobile {
+      a {
+        font-family: "roboto-light";
+      }
+    }
+  }
+}
+
+.appointment {
+  padding: 50px 20px 100px;
+  background: rgb(33, 149, 243);
+  background: radial-gradient(
+    circle,
+    rgba(33, 149, 243, 1) 0%,
+    rgba(226, 225, 232, 1) 100%
+  );
+
+  h3 {
+    text-align: center;
+    font-family: "roboto-light";
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  p {
+    font-size: 24px;
+    font-family: "roboto-thin";
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .step-content {
+    input {
+      font-family: "roboto-light";
+      &:hover {
+        border-color: $primary !important;
+      }
+      &:focus {
+        border-color: $primary !important;
+      }
+    }
+    label {
+      font-family: "roboto-light" !important;
+    }
+    span {
+      color: $primary !important;
+      font-family: "roboto-thin" !important;
+    }
+    h5 {
+      text-align: center;
+      font-family: "roboto-light";
+    }
+    p {
+      font-size: 18px;
+      font-family: "roboto-thin";
+      text-align: justify;
+      margin: 15px 0;
+    }
+    .switch {
+      display: flex;
+      justify-content: center;
+      label {
+        font-size: 18px;
+        font-family: "roboto-light";
+      }
+    }
+    .datepicker-date-display {
+      background-color: $primary;
+    }
+    .timepicker-tick {
+      border-color: $primary;
+      &.active {
+        background-color: $primary;
+      }
+    }
+    .timepicker-digital-display {
+      background-color: $primary;
+    }
+    .datepicker-cancel,
+    .datepicker-clear,
+    .datepicker-today,
+    .datepicker-done {
+      color: $primary;
+    }
+    .datepicker-table {
+      td.is-selected {
+        background-color: $primary;
+      }
+      td.is-today {
+        color: $primary;
+      }
+    }
+  }
+}
+
+footer {
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    h4 {
+      font-family: "roboto-light";
+    }
+    p,
+    li {
+      font-size: 18px;
+      font-family: "roboto-thin";
+      text-align: center;
+    }
+    a {
+      line-height: 20px;
+    }
+  }
+}

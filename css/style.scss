@@ -3,10 +3,26 @@
 nav {
   .nav-wrapper {
     .brand-logo {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
       span {
-        font-size: 24px;
-        vertical-align: center;
-        font-family: "roboto-light";
+        font-size: 18px;
+        font-family: "roboto-bold";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 3px 5px;
+      }
+      .first {
+        background-color: $front;
+        border-radius: 5px 0px 0px 5px;
+      }
+      .second {
+        background-color: $primary;
+        border-radius: 0px 5px 5px 0px;
+        border: 1px solid $front;
       }
       img {
         width: 40px;
@@ -16,6 +32,7 @@ nav {
     padding-left: 15px;
     .nav-mobile {
       a {
+        font-family: "roboto-light";
       }
     }
   }
@@ -23,6 +40,9 @@ nav {
 
 .tabs {
   overflow: hidden;
+  @media screen and (max-width: 950px) {
+    overflow-x: scroll;
+  }
 }
 
 .sidenav {
@@ -56,6 +76,12 @@ nav {
         font-family: "roboto-light";
       }
     }
+    @media screen and (max-width: 650px) {
+      padding: 10px;
+      h4 {
+        font-size: 18px;
+      }
+    }
   }
 }
 
@@ -69,7 +95,9 @@ nav {
     justify-content: space-around;
     .card-panel {
       margin: 30px;
-      padding: 30px 15px;
+      &:last-child {
+        margin: 10px 0px;
+      }
     }
     .project {
       &__talk {
@@ -101,8 +129,23 @@ nav {
 }
 
 .service {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  .table-of-contents {
+    a {
+      &.active {
+        color: $primary !important;
+        border-color: $primary !important;
+      }
+      &:hover {
+        color: $primary !important;
+        border-color: $primary !important;
+      }
+    }
+  }
   .collection {
-    margin-top: 25px;
+    margin-top: 250px;
     padding: 0;
     font-family: "roboto-light";
     .collection-header {
@@ -112,19 +155,43 @@ nav {
       display: flex;
     }
   }
-  &__description {
-    h4 {
-      font-family: "roboto-light";
+  .content {
+    position: relative;
+    .collection {
+      @media screen and (max-width: 950px) {
+        width: 100%;
+        margin-top: 25px;
+        li {
+          justify-content: center;
+        }
+      }
     }
-    h5 {
-      font-family: "roboto-thin";
-    }
-    a {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 30px auto;
-      width: 150px;
+    .description-block {
+      .service {
+        &__description {
+          h4 {
+            font-family: "roboto-light";
+          }
+          h5 {
+            font-family: "roboto-thin";
+          }
+          a {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px auto;
+            width: 150px;
+          }
+        }
+      }
+      @media screen and (max-width: 950px) {
+        width: 100%;
+        h4,
+        h5,
+        a {
+          text-align: center;
+        }
+      }
     }
   }
 }
@@ -185,12 +252,20 @@ nav {
   }
   &__content {
     margin-top: 125px;
+    display: flex;
+    flex-wrap: wrap;
     & > h3 {
       margin-left: 150px;
+      @media screen and (max-width: 900px) {
+        margin-left: 25px;
+      }
     }
     .mydescription {
       margin-left: 200px;
       font-family: "roboto-light";
+      @media screen and (max-width: 900px) {
+        margin-left: 50px;
+      }
       .description-action {
         margin: 25px auto;
       }
@@ -199,6 +274,12 @@ nav {
         margin: 25px auto;
       }
       .sylvia {
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 900px) {
+          width: 50%;
+          margin: auto;
+        }
         img {
           width: 100px;
         }
@@ -216,6 +297,9 @@ nav {
     .curriculum {
       margin-left: 200px;
       margin-bottom: 50px;
+      @media screen and (max-width: 900px) {
+        margin-left: 50px;
+      }
       h5 {
         font-family: "roboto-thin";
       }
@@ -226,6 +310,28 @@ nav {
         width: 250px;
         margin: 25px 0;
       }
+    }
+  }
+}
+
+footer {
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    h4 {
+      font-family: "roboto-light";
+    }
+    p,
+    li {
+      font-size: 18px;
+      font-family: "roboto-thin";
+      text-align: center;
+    }
+    a {
+      font-weight: 400;
+      line-height: 20px;
     }
   }
 }

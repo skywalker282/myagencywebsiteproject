@@ -4,10 +4,26 @@
 nav {
   .nav-wrapper {
     .brand-logo {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
       span {
-        font-size: 24px;
-        vertical-align: center;
-        font-family: "roboto-light";
+        font-size: 18px;
+        font-family: "roboto-bold";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        padding: 3px 5px;
+      }
+      .first {
+        background-color: $front;
+        border-radius: 5px 0px 0px 5px;
+      }
+      .second {
+        background-color: $primary;
+        border-radius: 0px 5px 5px 0px;
+        border: 1px solid $front;
       }
       img {
         width: 40px;
@@ -17,6 +33,7 @@ nav {
     padding-left: 15px;
     .nav-mobile {
       a {
+        font-family: "roboto-light";
       }
     }
   }
@@ -93,8 +110,11 @@ nav {
       text-align: center;
       font-family: "roboto-light";
       &:first-child {
-        margin: 50px auto;
-        font-family: "roboto-bold";
+        margin: 50px auto 25px;
+        font-family: "roboto-light";
+        i {
+          font-size: 50px;
+        }
       }
     }
     h6 {
@@ -232,6 +252,55 @@ nav {
           margin: 15px 0;
         }
       }
+    }
+  }
+}
+
+.contact {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    .form {
+      h4 {
+        font-family: "roboto-bold";
+      }
+      p {
+        font-size: 20px;
+        font-family: "roboto-thin";
+      }
+      a {
+        padding: 5px 10px;
+        height: auto;
+        margin: 25px 0;
+      }
+    }
+    .illustr {
+      background-image: url("../img/buidtogether.jpg");
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+footer {
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
+    h4 {
+      font-family: "roboto-light";
+    }
+    p,
+    li {
+      font-size: 18px;
+      font-family: "roboto-thin";
+      text-align: center;
+    }
+    a {
+      line-height: 20px;
     }
   }
 }

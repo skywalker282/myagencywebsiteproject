@@ -1,3 +1,6 @@
+$primary: #2196f3;
+$front: #fff;
+
 @font-face {
   font-family: "roboto-thin";
   src: url("../Roboto/Roboto-Thin.ttf");
@@ -31,4 +34,46 @@
 
 body {
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  z-index: 3000;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $front;
+  box-shadow: inset 0 0 5px $front;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+@mixin themeBlueWhite {
+  span,
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  i {
+    color: $front;
+  }
+  div,
+  ul,
+  li {
+    background-color: $primary;
+  }
 }
