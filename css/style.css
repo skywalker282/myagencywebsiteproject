@@ -176,12 +176,14 @@ nav .nav-wrapper .nav-mobile a {
   flex-wrap: wrap;
 }
 .service .table-of-contents a.active {
-  color: #2196f3 !important;
-  border-color: #2196f3 !important;
+  border: none;
+  font-family: "roboto-bold";
+  color: #2196f3;
 }
 .service .table-of-contents a:hover {
-  color: #2196f3 !important;
-  border-color: #2196f3 !important;
+  border: none;
+  font-family: "roboto-bold";
+  color: #2196f3;
 }
 .service .collection {
   margin-top: 25px;

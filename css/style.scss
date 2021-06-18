@@ -135,12 +135,14 @@ nav {
   .table-of-contents {
     a {
       &.active {
-        color: $primary !important;
-        border-color: $primary !important;
+        border: none;
+        font-family: "roboto-bold";
+        color: $primary;
       }
       &:hover {
-        color: $primary !important;
-        border-color: $primary !important;
+        border: none;
+        font-family: "roboto-bold";
+        color: $primary;
       }
     }
   }
