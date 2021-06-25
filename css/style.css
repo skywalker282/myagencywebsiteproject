@@ -403,4 +403,48 @@ footer .col a {
   z-index: 900;
 }
 
+.modal {
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.modal:focus {
+  outline: none;
+}
+.modal .row {
+  display: flex !important;
+  align-items: center;
+}
+.modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-footer a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: flex-end;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.modal .modal-footer a i {
+  margin-left: 10px;
+}
+.modal .modal-footer a:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+.modal .modal-footer a:hover i {
+  color: #fff;
+}
+.modal option,
+.modal span,
+.modal label {
+  color: #2196f3 !important;
+}
+.modal i {
+  font-size: 30px;
+  color: #2196f3;
+}
+
 /*# sourceMappingURL=style.css.map */
