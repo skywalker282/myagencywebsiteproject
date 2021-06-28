@@ -137,37 +137,18 @@ nav .nav-wrapper .nav-mobile a {
   padding: 20px 50px;
   margin: 0 !important;
 }
-.project .cards {
-  font-family: "roboto-light";
-  justify-content: space-around;
-}
-.project .cards .card-panel {
-  margin: 30px;
-}
-.project .cards .card-panel:last-child {
-  margin: 10px 0px;
-}
-.project .cards .project__talk {
+.project__cards {
+  padding: 50px 15%;
   display: flex;
   justify-content: center;
-}
-.project .cards .project__talk h5 {
-  font-family: "roboto-light";
-}
-.project .cards .project__talk i {
-  font-size: 72px;
-  text-align: center;
-}
-.project .cards .row {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 26px;
 }
-.project .cards .row .card .card-reveal {
-  background: #2195f377;
-  color: white;
-  font-size: 20px;
+.project__cards .card {
+  margin: 25px;
+}
+.project__cards .s12,
+.project__cards .m6 {
+  margin-left: 0 !important;
 }
 
 .service {
@@ -405,6 +386,7 @@ footer .col a {
 
 .modal {
   padding: 10px;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
 }

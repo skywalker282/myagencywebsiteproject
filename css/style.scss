@@ -90,40 +90,20 @@ nav {
     padding: 20px 50px;
     margin: 0 !important;
   }
-  .cards {
-    font-family: "roboto-light";
-    justify-content: space-around;
-    .card-panel {
-      margin: 30px;
-      &:last-child {
-        margin: 10px 0px;
-      }
+  // .row .col.s12 {
+  //   margin: 0 !important;
+  // }
+  &__cards {
+    padding: 50px 15%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      margin: 25px;
     }
-    .project {
-      &__talk {
-        display: flex;
-        justify-content: center;
-        h5 {
-          font-family: "roboto-light";
-        }
-        i {
-          font-size: 72px;
-          text-align: center;
-        }
-      }
-    }
-    .row {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding-top: 26px;
-      .card {
-        .card-reveal {
-          background: #2195f377;
-          color: white;
-          font-size: 20px;
-        }
-      }
+    .s12,
+    .m6 {
+      margin-left: 0 !important;
     }
   }
 }

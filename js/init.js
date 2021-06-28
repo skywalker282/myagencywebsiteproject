@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var timeElems = document.querySelectorAll(".timepicker");
   var timeInstances = M.Timepicker.init(timeElems, {});
+
+  var modalElems = document.querySelectorAll(".modal");
+  var modalInstances = M.Modal.init(modalElems, {
+    opacity: 0.1,
+  });
 });
 
 //Set the chat button on every screen
