@@ -145,6 +145,7 @@ nav .nav-wrapper .nav-mobile a {
 }
 .project__cards .card {
   margin: 25px;
+  border-radius: 15px;
 }
 .project__cards .s12,
 .project__cards .m6 {
