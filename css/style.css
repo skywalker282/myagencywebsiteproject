@@ -84,11 +84,11 @@ nav .nav-wrapper .nav-mobile a {
   font-family: "roboto-light";
 }
 
-.tabs {
+.nav-content .tabs {
   overflow: hidden;
 }
 @media screen and (max-width: 950px) {
-  .tabs {
+  .nav-content .tabs {
     overflow-x: scroll;
   }
 }
@@ -138,18 +138,30 @@ nav .nav-wrapper .nav-mobile a {
   margin: 0 !important;
 }
 .project__cards {
-  padding: 50px 15%;
+  padding: 50px 10%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .project__cards .card {
-  margin: 25px;
+  width: 45% !important;
+  margin: 5%;
   border-radius: 15px;
 }
-.project__cards .s12,
-.project__cards .m6 {
-  margin-left: 0 !important;
+.project__cards .card .card-title {
+  font-size: 20px !important;
+}
+@media screen and (min-width: 676px) {
+  .project__cards .card {
+    margin: 5% 5% !important;
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 675px) {
+  .project__cards .card {
+    margin: 5% 20% !important;
+    width: 60% !important;
+  }
 }
 
 .service {
@@ -180,6 +192,13 @@ nav .nav-wrapper .nav-mobile a {
 }
 .service .content {
   position: relative;
+  display: flex;
+  justify-content: center;
+}
+.service .content .collection {
+  position: sticky;
+  top: 25px;
+  height: min-content;
 }
 @media screen and (max-width: 950px) {
   .service .content .collection {
@@ -215,12 +234,10 @@ nav .nav-wrapper .nav-mobile a {
 }
 
 .competence .hero-img {
-  width: 100vw;
-  margin: 5px 0;
+  width: 100%;
 }
 .competence .hero-img img {
   width: 100%;
-  height: 550px;
 }
 .competence .service-container {
   display: flex;
@@ -249,7 +266,7 @@ nav .nav-wrapper .nav-mobile a {
 .about__hero {
   position: relative;
   height: 200px;
-  background-image: url("../img/mebackdrop.png");
+  background-image: url("../img/cris_mind.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -279,6 +296,9 @@ nav .nav-wrapper .nav-mobile a {
 .about__content .mydescription {
   margin-left: 200px;
   font-family: "roboto-light";
+}
+.about__content .mydescription .m8 {
+  padding-right: 20%;
 }
 @media screen and (max-width: 900px) {
   .about__content .mydescription {
@@ -317,6 +337,7 @@ nav .nav-wrapper .nav-mobile a {
 .about__content .curriculum {
   margin-left: 200px;
   margin-bottom: 50px;
+  padding-right: 50%;
 }
 @media screen and (max-width: 900px) {
   .about__content .curriculum {
