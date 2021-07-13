@@ -41,12 +41,8 @@ nav {
 
 .appointment {
   padding: 50px 20px 100px;
-  background: rgb(33, 149, 243);
-  background: radial-gradient(
-    circle,
-    rgba(33, 149, 243, 1) 0%,
-    rgba(226, 225, 232, 1) 100%
-  );
+  background: $primary;
+  background: radial-gradient(circle, $primary 0%, rgba(226, 225, 232, 1) 100%);
 
   h3 {
     text-align: center;

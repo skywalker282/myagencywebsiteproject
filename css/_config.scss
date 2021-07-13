@@ -1,4 +1,5 @@
-$primary: #2196f3;
+$primary: #0f436e;
+$primary-light: #1a70b6;
 $front: #fff;
 
 @font-face {
@@ -51,7 +52,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $primary;
+  background: #145992;
 }
 
 input:-internal-autofill-selected {

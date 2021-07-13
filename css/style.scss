@@ -1,66 +1,5 @@
 @import "./config";
 
-nav {
-  .nav-wrapper {
-    .brand-logo {
-      display: flex;
-      align-items: center;
-      margin-top: 10px;
-      span {
-        font-size: 18px;
-        font-family: "roboto-bold";
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        padding: 3px 5px;
-      }
-      .first {
-        background-color: $front;
-        border-radius: 5px 0px 0px 5px;
-      }
-      .second {
-        background-color: $primary;
-        border-radius: 0px 5px 5px 0px;
-        border: 1px solid $front;
-      }
-      img {
-        width: 40px;
-        margin-right: 20px !important;
-      }
-    }
-    padding-left: 15px;
-    .nav-mobile {
-      a {
-        font-family: "roboto-light";
-      }
-    }
-  }
-}
-
-.nav-content {
-  .tabs {
-    overflow: hidden;
-    @media screen and (max-width: 950px) {
-      overflow-x: scroll;
-    }
-  }
-}
-
-.sidenav {
-  li {
-    width: 100% !important;
-    &:first-child {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 100% !important;
-      }
-    }
-  }
-}
-
 .heading {
   background: url("../img/coder.jpeg");
   background-attachment: fixed;
@@ -195,6 +134,9 @@ nav {
 }
 
 .competence {
+  .parallax-container {
+    // height: 50%;
+  }
   .hero-img {
     // width: 100%;
     width: 100%;

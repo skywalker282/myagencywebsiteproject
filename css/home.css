@@ -43,7 +43,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2196f3;
+  background: #145992;
 }
 
 input:-internal-autofill-selected {
@@ -66,19 +66,12 @@ input:-internal-autofill-selected {
   border: none;
 }
 
-.hidden {
-  display: none;
+.bg-primary {
+  background-color: #0f436e;
 }
 
-.android-float {
-  position: fixed;
-  bottom: 25px;
-  right: 15px;
-  padding: 15px;
-  font-size: 25px;
-  border-radius: 100%;
-  cursor: pointer;
-  z-index: 900;
+.text-primary {
+  color: #0f436e;
 }
 
 nav .nav-wrapper {
@@ -103,7 +96,140 @@ nav .nav-wrapper .brand-logo .first {
   border-radius: 5px 0px 0px 5px;
 }
 nav .nav-wrapper .brand-logo .second {
-  background-color: #2196f3;
+  background-color: #0f436e;
+  border-radius: 0px 5px 5px 0px;
+  border: none !important;
+}
+nav .nav-wrapper .brand-logo img {
+  width: 40px;
+  margin-right: 20px !important;
+}
+@media screen and (max-width: 600px) {
+  nav .nav-wrapper .brand-logo span {
+    height: 20px;
+    padding: 2px 3px;
+  }
+  nav .nav-wrapper .brand-logo .first {
+    border-radius: 2px 0px 0px 2px;
+  }
+  nav .nav-wrapper .brand-logo .second {
+    border-radius: 0px 2px 2px 0px;
+  }
+}
+nav .nav-wrapper .nav-mobile a {
+  font-family: "roboto-light";
+}
+
+.nav-content .tabs {
+  overflow: hidden;
+}
+@media screen and (max-width: 950px) {
+  .nav-content .tabs {
+    overflow-x: hidden;
+  }
+}
+
+.sidenav li {
+  width: 100% !important;
+}
+.sidenav li:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav li:first-child img {
+  width: 100% !important;
+}
+
+.footer-copyright {
+  box-shadow: 0px 0px 10px #1a70b6;
+  margin-top: 3%;
+}
+
+.hidden {
+  display: none;
+}
+
+.android-float {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.modal {
+  padding: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+}
+.modal:focus {
+  outline: none;
+}
+.modal .row {
+  display: flex !important;
+  align-items: center;
+}
+.modal .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal .modal-footer a {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: flex-end;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.modal .modal-footer a i {
+  margin-left: 10px;
+}
+.modal .modal-footer a:hover {
+  background-color: #0f436e;
+  color: #fff;
+}
+.modal .modal-footer a:hover i {
+  color: #fff;
+}
+.modal option,
+.modal span,
+.modal label {
+  color: #0f436e !important;
+}
+.modal i {
+  font-size: 30px;
+  color: #0f436e;
+}
+
+nav .nav-wrapper {
+  padding-left: 15px;
+}
+nav .nav-wrapper .brand-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+nav .nav-wrapper .brand-logo span {
+  font-size: 18px;
+  font-family: "roboto-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 3px 5px;
+}
+nav .nav-wrapper .brand-logo .first {
+  background-color: #fff;
+  border-radius: 5px 0px 0px 5px;
+}
+nav .nav-wrapper .brand-logo .second {
+  background-color: #0f436e;
   border-radius: 0px 5px 5px 0px;
   border: 1px solid #fff;
 }
@@ -165,12 +291,51 @@ nav .nav-wrapper .nav-mobile a {
   height: auto;
 }
 
+.row {
+  margin-bottom: 0 !important;
+}
+
+.passport {
+  display: flex;
+  justify-content: space-between;
+  padding: 10% 15%;
+  width: 100%;
+}
+.passport-profile {
+  width: 25vw;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 23vw;
+}
+.passport-profile img {
+  width: 100%;
+  height: 100%;
+}
+.passport-identity p {
+  margin: 2em 0;
+}
+.passport-identity p i {
+  font-size: 34px;
+}
+.passport-identity p span {
+  font-family: "roboto-light";
+  font-size: 24px;
+}
+
 .introduction {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 25px 0;
   width: 100%;
+}
+.introduction .intro-title {
+  font-family: "roboto-light";
+  text-align: center;
+  border-bottom: 2px;
+  background-color: linear-gradient(black, white, black);
+  margin: 3% 0;
+  padding: 0;
 }
 .introduction .me {
   display: flex;
@@ -187,7 +352,7 @@ nav .nav-wrapper .nav-mobile a {
   font-family: "roboto-light";
 }
 .introduction .me h4:first-child {
-  margin: 50px auto 25px;
+  margin: 10% auto 5%;
   font-family: "roboto-light";
 }
 .introduction .me h4:first-child i {
@@ -209,7 +374,14 @@ nav .nav-wrapper .nav-mobile a {
   border-radius: 50%;
 }
 .introduction .detail {
-  padding-top: 50px;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.introduction .detail .row {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 @media screen and (max-width: 700px) {
   .introduction .detail {
@@ -218,7 +390,7 @@ nav .nav-wrapper .nav-mobile a {
 }
 .introduction .detail .why-block {
   display: flex;
-  align-items: flex-start;
+  margin-bottom: 5% !important;
 }
 @media screen and (max-width: 1000px) {
   .introduction .detail .why-block {
@@ -265,11 +437,11 @@ nav .nav-wrapper .nav-mobile a {
 .media {
   padding: 30px 0;
   background: #e2e1e8;
-  background: radial-gradient(circle, #e2e1e8 17%, #2195f3 97%);
+  background: radial-gradient(circle, #e2e1e8 17%, #0f436e 97%);
 }
 .media h3 {
   text-align: center;
-  font-family: "roboto-bold";
+  font-family: "roboto-light";
 }
 .media > p {
   font-family: "roboto-light";
@@ -348,10 +520,14 @@ nav .nav-wrapper .nav-mobile a {
   font-size: 20px;
   font-family: "roboto-thin";
 }
-.contact .row .form a {
+.contact .row .form .schedule-link {
   padding: 5px 10px;
   height: auto;
   margin: 25px 0;
+}
+.contact .row .form .schedule-link:hover {
+  background-color: transparent !important;
+  color: #0f436e;
 }
 .contact .row .illustr {
   background-image: url("../img/buidtogether.jpg");
