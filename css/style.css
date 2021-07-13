@@ -279,6 +279,10 @@ input:-internal-autofill-selected {
   width: 50px;
   margin: 10px 0;
 }
+.about__content .mydescription .sylvia a:hover {
+  background-color: transparent;
+  color: #0f436e;
+}
 .about__content .curriculum {
   margin-left: 200px;
   margin-bottom: 50px;
