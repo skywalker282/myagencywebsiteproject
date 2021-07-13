@@ -167,6 +167,10 @@ input:-internal-autofill-selected {
   margin: 30px auto;
   width: 150px;
 }
+.service .content .description-block .service__description a:hover {
+  color: #0f436e !important;
+  background-color: transparent;
+}
 @media screen and (max-width: 950px) {
   .service .content .description-block {
     width: 100%;
@@ -302,6 +306,10 @@ input:-internal-autofill-selected {
   align-items: center;
   width: 250px;
   margin: 25px 0;
+}
+.about__content .curriculum a:hover {
+  color: #0f436e;
+  background-color: transparent;
 }
 
 footer .col {

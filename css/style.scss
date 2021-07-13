@@ -118,6 +118,10 @@
             align-items: center;
             margin: 30px auto;
             width: 150px;
+            &:hover {
+              color: $primary !important;
+              background-color: transparent;
+            }
           }
         }
       }
@@ -256,6 +260,10 @@
         align-items: center;
         width: 250px;
         margin: 25px 0;
+        &:hover {
+          color: $primary;
+          background-color: transparent;
+        }
       }
     }
   }

@@ -85,6 +85,9 @@ nav {
               font-family: "roboto-light";
               padding: 10px 15px;
               height: auto;
+              &:hover {
+                background-color: transparent;
+              }
             }
           }
         }

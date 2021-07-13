@@ -290,6 +290,9 @@ nav .nav-wrapper .nav-mobile a {
   padding: 10px 15px;
   height: auto;
 }
+.heading .overlay .heading__title .heading__action a:hover {
+  background-color: transparent;
+}
 
 .row {
   margin-bottom: 0 !important;
