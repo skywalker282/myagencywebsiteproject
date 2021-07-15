@@ -115,14 +115,20 @@ nav {
     }
   }
   &-identity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     p {
-      margin: 2em 0;
+      display: flex;
+      align-items: center;
+      margin: 1em;
       i {
         font-size: 34px;
       }
       span {
         font-family: "roboto-light";
         font-size: 24px;
+        margin-left: 1em;
       }
     }
   }

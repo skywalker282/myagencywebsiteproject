@@ -1,5 +1,32 @@
 {
+  "name": "myagencywebsiteproject",
+  "version": "1.0.0",
+  "description": "full-stack portfolio",
+  "main": "app.js",
   "dependencies": {
-    "axios": "^0.21.1"
-  }
+    "axios": "^0.21.1",
+    "follow-redirects": "^1.14.1",
+    "isarray": "^0.0.1",
+    "path-to-regexp": "^1.8.0",
+    "serviceworker-cache-polyfill": "^4.0.0",
+    "sw-toolbox": "^3.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CirhuzaZagabe/myagencywebsiteproject.git"
+  },
+  "keywords": [
+    "Chat",
+    "bot",
+    "portfolio"
+  ],
+  "author": "Cris Cirhuza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CirhuzaZagabe/myagencywebsiteproject/issues"
+  },
+  "homepage": "https://github.com/CirhuzaZagabe/myagencywebsiteproject#readme"
 }
