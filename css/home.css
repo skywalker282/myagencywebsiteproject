@@ -303,9 +303,12 @@ nav .nav-wrapper .nav-mobile a {
   justify-content: space-between;
   padding: 10% 15%;
   width: 100%;
+  background: white;
+  background: radial-gradient(circle, white 0%, #0f436e 50%);
 }
 .passport-profile {
   width: 25vw;
+  border: 15px solid #fff;
   border-radius: 50%;
   overflow: hidden;
   height: 23vw;
@@ -326,6 +329,7 @@ nav .nav-wrapper .nav-mobile a {
 }
 .passport-identity p i {
   font-size: 34px;
+  color: #fff;
 }
 .passport-identity p span {
   font-family: "roboto-light";
@@ -340,8 +344,13 @@ nav .nav-wrapper .nav-mobile a {
   padding: 25px 0;
   width: 100%;
 }
+.introduction hr {
+  height: 1px;
+  background-color: #fff;
+  border: none;
+}
 .introduction .intro-title {
-  font-family: "roboto-light";
+  font-family: "roboto-bold";
   text-align: center;
   border-bottom: 2px;
   background-color: linear-gradient(black, white, black);
@@ -448,11 +457,16 @@ nav .nav-wrapper .nav-mobile a {
 .media {
   padding: 30px 0;
   background: #e2e1e8;
-  background: radial-gradient(circle, #e2e1e8 17%, #0f436e 97%);
+  background: radial-gradient(circle, #e2e1e8 17%, #0f436e 99%);
 }
 .media h3 {
   text-align: center;
-  font-family: "roboto-light";
+  font-family: "roboto-bold";
+}
+.media hr {
+  height: 1px;
+  background-color: #0f436e;
+  border: none;
 }
 .media > p {
   font-family: "roboto-light";
@@ -469,6 +483,7 @@ nav .nav-wrapper .nav-mobile a {
 .media .article-block .card-panel {
   padding: 0;
   margin: 15px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1120px) and (min-width: 600px) {
   .media .article-block .card-panel {
@@ -483,6 +498,7 @@ nav .nav-wrapper .nav-mobile a {
 .media .article-block .card-panel img {
   width: 100% !important;
   height: 40%;
+  border-radius: 10px 10px 0 0;
 }
 .media .article-block .card-panel .card-body {
   padding: 10px;

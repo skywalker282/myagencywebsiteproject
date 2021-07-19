@@ -190,13 +190,20 @@
       position: absolute;
       left: 50px;
       bottom: -100px;
-      border-radius: 100%;
+      border: 10px solid $front;
+      border-radius: 50%;
     }
   }
   &__content {
     margin-top: 125px;
     display: flex;
     flex-wrap: wrap;
+    background: rgb(15, 67, 110);
+    background: linear-gradient(
+      14deg,
+      rgba(15, 67, 110, 1) 0%,
+      rgba(255, 255, 255, 1) 46%
+    );
     & > h3 {
       margin-left: 150px;
       @media screen and (max-width: 900px) {
@@ -227,7 +234,8 @@
           margin: auto;
         }
         img {
-          width: 100px;
+          width: 80px;
+          border-radius: 50%;
         }
         a {
           border-radius: 100%;

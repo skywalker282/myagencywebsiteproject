@@ -227,12 +227,15 @@ input:-internal-autofill-selected {
   position: absolute;
   left: 50px;
   bottom: -100px;
-  border-radius: 100%;
+  border: 10px solid #fff;
+  border-radius: 50%;
 }
 .about__content {
   margin-top: 125px;
   display: flex;
   flex-wrap: wrap;
+  background: #0f436e;
+  background: linear-gradient(14deg, #0f436e 0%, white 46%);
 }
 .about__content > h3 {
   margin-left: 150px;
@@ -272,7 +275,8 @@ input:-internal-autofill-selected {
   }
 }
 .about__content .mydescription .sylvia img {
-  width: 100px;
+  width: 80px;
+  border-radius: 50%;
 }
 .about__content .mydescription .sylvia a {
   border-radius: 100%;
