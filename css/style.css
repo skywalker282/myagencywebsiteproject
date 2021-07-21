@@ -93,8 +93,21 @@ input:-internal-autofill-selected {
   margin: 5%;
   border-radius: 15px;
 }
-.project__cards .card .card-title {
+.project__cards .card-title {
   font-size: 20px !important;
+}
+.project__cards .card-reveal {
+  background-color: #1a70b6;
+  opacity: 0.8;
+}
+.project__cards .card-reveal span {
+  font-family: "roboto-bold";
+  font-size: 26px !important;
+}
+.project__cards .card-reveal p {
+  font-size: 24px;
+  font-family: "roboto-thin";
+  color: #fff;
 }
 @media screen and (min-width: 676px) {
   .project__cards .card {
@@ -182,9 +195,6 @@ input:-internal-autofill-selected {
   }
 }
 
-.competence .hero-img {
-  width: 100%;
-}
 .competence .hero-img img {
   width: 100%;
 }
@@ -235,7 +245,7 @@ input:-internal-autofill-selected {
   display: flex;
   flex-wrap: wrap;
   background: #0f436e;
-  background: linear-gradient(14deg, #0f436e 0%, white 46%);
+  background: linear-gradient(14deg, #0f436e 0%, white 70%);
 }
 .about__content > h3 {
   margin-left: 150px;
@@ -267,12 +277,18 @@ input:-internal-autofill-selected {
 .about__content .mydescription .sylvia {
   display: flex;
   justify-content: center;
+  background: #0f436e;
+  background: linear-gradient(14deg, #0f436e 0%, white 70%);
 }
 @media screen and (max-width: 900px) {
   .about__content .mydescription .sylvia {
     width: 50%;
     margin: auto;
   }
+}
+.about__content .mydescription .sylvia .card-panel {
+  background: #0f436e;
+  background: linear-gradient(14deg, #0f436e 0%, white 70%);
 }
 .about__content .mydescription .sylvia img {
   width: 80px;

@@ -43,8 +43,21 @@
       width: 45% !important;
       margin: 5%;
       border-radius: 15px;
-      .card-title {
+      &-title {
         font-size: 20px !important;
+      }
+      &-reveal {
+        background-color: $primary-light;
+        opacity: 0.8;
+        span {
+          font-family: "roboto-bold";
+          font-size: 26px !important;
+        }
+        p {
+          font-size: 24px;
+          font-family: "roboto-thin";
+          color: $front;
+        }
       }
       @media screen and (min-width: 676px) {
         margin: 5% 5% !important;
@@ -143,7 +156,7 @@
   }
   .hero-img {
     // width: 100%;
-    width: 100%;
+    // width: 100%;
     img {
       width: 100%;
     }
@@ -202,7 +215,7 @@
     background: linear-gradient(
       14deg,
       rgba(15, 67, 110, 1) 0%,
-      rgba(255, 255, 255, 1) 46%
+      rgba(255, 255, 255, 1) 70%
     );
     & > h3 {
       margin-left: 150px;
@@ -229,9 +242,23 @@
       .sylvia {
         display: flex;
         justify-content: center;
+        background: rgb(15, 67, 110);
+        background: linear-gradient(
+          14deg,
+          rgba(15, 67, 110, 1) 0%,
+          rgba(255, 255, 255, 1) 70%
+        );
         @media screen and (max-width: 900px) {
           width: 50%;
           margin: auto;
+        }
+        .card-panel {
+          background: rgb(15, 67, 110);
+          background: linear-gradient(
+            14deg,
+            rgba(15, 67, 110, 1) 0%,
+            rgba(255, 255, 255, 1) 70%
+          );
         }
         img {
           width: 80px;
