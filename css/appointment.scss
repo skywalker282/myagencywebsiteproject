@@ -79,6 +79,12 @@ nav {
           color: $front !important;
         }
       }
+      .switch label input[type="checkbox"]:checked + .lever {
+        background-color: $primary-light;
+      }
+      .switch label input[type="checkbox"]:checked + .lever:after {
+        background-color: $front;
+      }
       input {
         font-family: "roboto-light";
         &:hover {
@@ -101,9 +107,38 @@ nav {
           color: $front;
         }
       }
+      .datepicker-date-display {
+        * {
+          color: $front-light !important;
+        }
+      }
+      .input-field {
+        * {
+          color: $front-light;
+        }
+      }
+      .timepicker-digital-display {
+        * {
+          color: $primary-light !important;
+        }
+      }
+      .timepicker-tick {
+        background-color: $primary !important;
+        color: $front-light;
+      }
+      .timepicker-canvas-bearing {
+        fill: $primary;
+      }
+      .timepicker-canvas-bg {
+        fill: $primary;
+      }
+      .timepicker-canvas line {
+        stroke: $primary !important;
+      }
       h5 {
         text-align: center;
         font-family: "roboto-light";
+        color: $front-light;
       }
       button {
         color: $front-light !important;
@@ -116,7 +151,9 @@ nav {
       p {
         font-size: 18px;
         font-family: "roboto-thin";
-        text-align: justify;
+        text-align: center;
+        color: $front-light;
+        font-size: 20px;
         margin: 15px 0;
       }
       .switch {

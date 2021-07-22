@@ -278,6 +278,12 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content .step-title::after {
   color: #fff !important;
 }
+.appointment .card .step-content .switch label input[type=checkbox]:checked + .lever {
+  background-color: #1a70b6;
+}
+.appointment .card .step-content .switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #fff;
+}
 .appointment .card .step-content input {
   font-family: "roboto-light";
 }
@@ -300,9 +306,32 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content i:hover {
   color: #fff;
 }
+.appointment .card .step-content .datepicker-date-display * {
+  color: #9e9e9e !important;
+}
+.appointment .card .step-content .input-field * {
+  color: #9e9e9e;
+}
+.appointment .card .step-content .timepicker-digital-display * {
+  color: #1a70b6 !important;
+}
+.appointment .card .step-content .timepicker-tick {
+  background-color: #0f436e !important;
+  color: #9e9e9e;
+}
+.appointment .card .step-content .timepicker-canvas-bearing {
+  fill: #0f436e;
+}
+.appointment .card .step-content .timepicker-canvas-bg {
+  fill: #0f436e;
+}
+.appointment .card .step-content .timepicker-canvas line {
+  stroke: #0f436e !important;
+}
 .appointment .card .step-content h5 {
   text-align: center;
   font-family: "roboto-light";
+  color: #9e9e9e;
 }
 .appointment .card .step-content button {
   color: #9e9e9e !important;
@@ -315,7 +344,9 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content p {
   font-size: 18px;
   font-family: "roboto-thin";
-  text-align: justify;
+  text-align: center;
+  color: #9e9e9e;
+  font-size: 20px;
   margin: 15px 0;
 }
 .appointment .card .step-content .switch {
