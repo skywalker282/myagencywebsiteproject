@@ -140,6 +140,7 @@ input:-internal-autofill-selected {
 .service .collection {
   margin-top: 25px;
   padding: 0;
+  border-radius: 10px;
   font-family: "roboto-light";
 }
 .service .collection .collection-header {

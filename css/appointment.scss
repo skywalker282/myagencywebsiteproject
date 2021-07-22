@@ -56,65 +56,102 @@ nav {
     text-align: center;
     margin-bottom: 25px;
   }
-  .step-content {
-    input {
-      font-family: "roboto-light";
-      &:hover {
-        border-color: $primary !important;
+  .card {
+    border-radius: 15px;
+    background-color: $primary;
+
+    ul.stepper .step:not(:last-of-type)::after {
+      background-color: $primary-light !important;
+    }
+    .step-content {
+      &::after {
+        color: $front !important;
+        background-color: $front !important;
       }
-      &:focus {
-        border-color: $primary !important;
+      .step-title {
+        * {
+          color: $front !important;
+        }
+        &::before {
+          background-color: $front;
+        }
+        &::after {
+          color: $front !important;
+        }
       }
-    }
-    label {
-      font-family: "roboto-light" !important;
-    }
-    span {
-      color: $primary !important;
-      font-family: "roboto-thin" !important;
-    }
-    h5 {
-      text-align: center;
-      font-family: "roboto-light";
-    }
-    p {
-      font-size: 18px;
-      font-family: "roboto-thin";
-      text-align: justify;
-      margin: 15px 0;
-    }
-    .switch {
-      display: flex;
-      justify-content: center;
+      input {
+        font-family: "roboto-light";
+        &:hover {
+          border-color: $front !important;
+        }
+        &:focus {
+          border-color: $front !important;
+        }
+      }
       label {
-        font-size: 18px;
+        font-family: "roboto-light" !important;
+      }
+      span {
+        color: $primary !important;
+        font-family: "roboto-thin" !important;
+      }
+      i {
+        color: $front-light;
+        &:hover {
+          color: $front;
+        }
+      }
+      h5 {
+        text-align: center;
         font-family: "roboto-light";
       }
-    }
-    .datepicker-date-display {
-      background-color: $primary;
-    }
-    .timepicker-tick {
-      border-color: $primary;
-      &.active {
+      button {
+        color: $front-light !important;
+        &:hover {
+          transition: 0.3s color;
+          background-color: $front-light;
+          color: $primary !important;
+        }
+      }
+      p {
+        font-size: 18px;
+        font-family: "roboto-thin";
+        text-align: justify;
+        margin: 15px 0;
+      }
+      .switch {
+        display: flex;
+        justify-content: center;
+        label {
+          font-size: 18px;
+          font-family: "roboto-light";
+        }
+      }
+      .datepicker-date-display {
         background-color: $primary;
       }
-    }
-    .timepicker-digital-display {
-      background-color: $primary;
-    }
-    .datepicker-cancel,
-    .datepicker-clear,
-    .datepicker-today,
-    .datepicker-done {
-      color: $primary;
-    }
-    .datepicker-table {
-      td.is-selected {
+      .timepicker-tick {
+        border-color: $primary;
+        &.active {
+          background-color: $primary;
+        }
+      }
+      .timepicker-digital-display {
         background-color: $primary;
       }
-      td.is-today {
+      .datepicker-cancel,
+      .datepicker-clear,
+      .datepicker-today,
+      .datepicker-done {
         color: $primary;
+      }
+      .datepicker-table {
+        td.is-selected {
+          background-color: $primary;
+        }
+        td.is-today {
+          color: $primary;
+        }
       }
     }
   }
