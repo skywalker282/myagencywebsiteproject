@@ -1,0 +1,33 @@
+{
+    "theme_color": "#1a70b6",
+    "background_color": "#0f436e",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/index.html",
+    "description": "This is the portfolio (a kind of cirriculum vitae for software developers) of the software,  web-mobile applications developer Crispin Cirhuza Zagabe. If you need a digital tool for your business management, automation or other things like that so, don't have any doubt to call  or write me to these addresses : celiitellu@gmail.com and  243976380527",
+    "name": "Software developer Crispin Cirhuza",
+    "short_name": "Developer Cirhuza",
+    "icons": [
+        {
+            "src": "img/manifest/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "img/manifest/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/manifest/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/manifest/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

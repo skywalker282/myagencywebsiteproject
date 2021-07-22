@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <link rel="manifest" href="manifest.webmanifest" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <link rel="apple-touch-icon" href="img/manifest//icon-256x256.png">
+      <meta name="theme-color" content="#1a70b6">
+      <meta name="application-name" content="PWA Workshop" />
+      <meta name="apple-mobile-web-app-title" content="PWA Workshop" />
+      <meta name="msapplication-starturl" content="/index.html" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>FullStack developer Cris Cirhuza</title>
@@ -9,7 +18,14 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/home.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        
       </head>
+      <script>
+        if ("serviceWorker" in window.navigator) {
+          window.navigator.serviceWorker.register("./main-worker.js");
+        }
+
+      </script>
     <body>
         <nav class="nav-extended bg-primary">
             <div class="nav-wrapper">

@@ -64,6 +64,18 @@ input:-internal-autofill-selected {
 }
 .chat-zone iframe {
   border: none;
+  border-radius: 10px;
+}
+@media screen and (max-width: 840px) {
+  .chat-zone iframe {
+    width: 70%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .chat-zone {
+    padding: 20px 20px;
+  }
 }
 
 .bg-primary {
@@ -257,8 +269,15 @@ nav .nav-wrapper .nav-mobile a {
   padding: 70px;
 }
 @media screen and (max-width: 840px) {
-  .heading .overlay .heading__title h4,
-.heading .overlay .heading__title h2 {
+  .heading .overlay .heading__title {
+    padding: 5%;
+  }
+  .heading .overlay .heading__title h4 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .heading .overlay .heading__title h2 {
+    font-size: 2em;
     text-align: center;
   }
 }
@@ -274,7 +293,7 @@ nav .nav-wrapper .nav-mobile a {
     justify-content: center;
   }
   .heading .overlay .heading__title .heading__action a {
-    margin: 15px;
+    margin: 0.2em;
   }
 }
 .heading .overlay .heading__title .heading__action {
@@ -293,6 +312,13 @@ nav .nav-wrapper .nav-mobile a {
 .heading .overlay .heading__title .heading__action a:hover {
   background-color: transparent;
 }
+@media screen and (max-width: 840px) {
+  .heading .overlay .heading__title .heading__action a {
+    padding: 5px 2px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
 
 .row {
   margin-bottom: 0 !important;
@@ -305,6 +331,16 @@ nav .nav-wrapper .nav-mobile a {
   width: 100%;
   background: white;
   background: radial-gradient(circle, white 0%, #0f436e 50%);
+}
+@media screen and (max-width: 840px) {
+  .passport {
+    flex-direction: column;
+    align-items: center;
+  }
+  .passport-profile {
+    width: 80vw;
+    border: 5px solid #fff;
+  }
 }
 .passport-profile {
   width: 25vw;

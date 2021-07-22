@@ -64,6 +64,7 @@ input:-internal-autofill-selected {
 }
 .chat-zone iframe {
   border: none;
+  border-radius: 10px;
 }
 
 .bg-primary {

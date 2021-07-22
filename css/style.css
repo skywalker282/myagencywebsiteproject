@@ -367,6 +367,18 @@ footer .col a {
 }
 .chat-zone iframe {
   border: none;
+  border-radius: 10px;
+}
+@media screen and (max-width: 840px) {
+  .chat-zone iframe {
+    width: 70%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 840px) {
+  .chat-zone {
+    padding: 20px 20px;
+  }
 }
 
 .bg-primary {

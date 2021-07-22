@@ -53,8 +53,13 @@ nav {
         margin: 0;
         padding: 70px;
         @media screen and (max-width: 840px) {
-          h4,
+          padding: 5%;
+          h4 {
+            text-align: center;
+            font-size: 1em;
+          }
           h2 {
+            font-size: 2em;
             text-align: center;
           }
         }
@@ -70,7 +75,7 @@ nav {
             &__action {
               justify-content: center;
               a {
-                margin: 15px;
+                margin: 0.2em;
               }
             }
           }
@@ -88,6 +93,11 @@ nav {
               &:hover {
                 background-color: transparent;
               }
+              @media screen and (max-width: 840px) {
+                padding: 5px 2px;
+                font-size: 18px;
+                line-height: 20px;
+              }
             }
           }
         }
@@ -104,6 +114,14 @@ nav {
   justify-content: space-between;
   padding: 10% 15%;
   width: 100%;
+  @media screen and (max-width: 840px) {
+    flex-direction: column;
+    align-items: center;
+    &-profile {
+      width: 80vw;
+      border: 5px solid $front;
+    }
+  }
   background: rgb(255, 255, 255);
   background: radial-gradient(
     circle,

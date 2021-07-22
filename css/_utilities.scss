@@ -11,6 +11,14 @@
   align-items: flex-end;
   iframe {
     border: none;
+    border-radius: 10px;
+    @media screen and (max-width: 840px) {
+      width: 70%;
+      height: 90%;
+    }
+  }
+  @media screen and (max-width: 840px) {
+    padding: 20px 20px;
   }
 }
 

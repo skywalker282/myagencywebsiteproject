@@ -1,7 +1,3 @@
-if ("serviceWorker" in window.navigator) {
-  window.navigator.serviceWorker.register("../main-worker.js");
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
   var sideElems = document.querySelectorAll(".sidenav");
