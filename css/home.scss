@@ -110,51 +110,62 @@ nav {
 }
 
 .passport {
-  display: flex;
-  justify-content: space-between;
-  padding: 10% 15%;
-  width: 100%;
-  @media screen and (max-width: 840px) {
-    flex-direction: column;
-    align-items: center;
-    &-profile {
-      width: 80vw;
-      border: 5px solid $front;
-    }
+  h4 {
+    text-align: center;
+    font-family: "roboto-light";
+    margin: 0;
+    color: $front;
+    padding: 3% 0;
+    background-color: $primary-light;
+    box-shadow: 0px 0px 5px $front-light;
   }
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(15, 67, 110, 1) 50%
-  );
-  &-profile {
-    width: 25vw;
-    border: 15px solid $front;
-    border-radius: 50%;
-    overflow: hidden;
-    height: 23vw;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  &-identity {
+  .passport-content {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    p {
-      display: flex;
+    justify-content: space-between;
+    padding: 10% 15%;
+    width: 100%;
+    @media screen and (max-width: 840px) {
+      flex-direction: column;
       align-items: center;
-      margin: 1em;
-      i {
-        font-size: 34px;
-        color: $front;
+      &-profile {
+        width: 80vw;
+        border: 5px solid $front;
       }
-      span {
-        font-family: "roboto-light";
-        font-size: 24px;
-        margin-left: 1em;
+    }
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(15, 67, 110, 1) 50%
+    );
+    .passport-profile {
+      width: 25vw;
+      border: 15px solid $front;
+      border-radius: 50%;
+      overflow: hidden;
+      height: 23vw;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .passport-identity {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        display: flex;
+        align-items: center;
+        margin: 1em;
+        i {
+          font-size: 34px;
+          color: $front;
+        }
+        span {
+          font-family: "roboto-light";
+          font-size: 24px;
+          margin-left: 1em;
+        }
       }
     }
   }
@@ -164,20 +175,18 @@ nav {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 25px 0;
+  padding: 0;
   width: 100%;
-  hr {
-    height: 1px;
-    background-color: $front;
-    border: none;
+  .col {
+    padding: 0;
   }
   .intro-title {
-    font-family: "roboto-bold";
+    font-family: "roboto-light";
     text-align: center;
     border-bottom: 2px;
-    background-color: linear-gradient(black, white, black);
-    margin: 3% 0;
-    padding: 0;
+    margin: 0;
+    padding: 3%;
+    background-color: $primary-light;
   }
   .me {
     display: flex;
@@ -272,17 +281,21 @@ nav {
 
 .media {
   padding: 30px 0;
-  background: rgb(226, 225, 232);
-  background: radial-gradient(circle, rgba(226, 225, 232, 1) 17%, $primary 99%);
-  h3 {
+  padding-top: 0;
+  background: $primary;
+  h4 {
     text-align: center;
-    font-family: "roboto-bold";
+    font-family: "roboto-light";
+    margin: 0;
+    padding: 3% 0;
+    background-color: $primary-light;
+    box-shadow: 0px 0px 5px $front-light;
   }
-  hr {
-    height: 1px;
-    background-color: #fff;
-    border: none;
-  }
+  // hr {
+  //   height: 1px;
+  //   background-color: #fff;
+  //   border: none;
+  // }
   & > p {
     font-family: "roboto-light";
     font-size: 20px;
