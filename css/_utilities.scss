@@ -173,3 +173,38 @@ nav {
     color: $primary;
   }
 }
+
+.aside-socials {
+  position: fixed;
+  top: 30%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  background-color: transparent;
+  list-style: none;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: $primary-light;
+    padding: 20px;
+    margin: 5px;
+    clip-path: polygon(
+      50% 0%,
+      83% 12%,
+      100% 43%,
+      94% 78%,
+      68% 100%,
+      32% 100%,
+      6% 78%,
+      0% 43%,
+      17% 12%
+    );
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

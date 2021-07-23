@@ -11,11 +11,18 @@
     color: $front-light;
     font-family: "roboto-light";
     font-size: 35px;
+    @media screen and (max-width: 600px) {
+      padding: 20px 50px;
+    }
   }
   .offline-content {
     padding: 100px 100px;
     color: $front;
     font-family: "roboto-thin";
     font-size: 24px;
+    padding: 50px 100px;
+    @media screen and (max-width: 600px) {
+      padding: 20px 50px;
+    }
   }
 }

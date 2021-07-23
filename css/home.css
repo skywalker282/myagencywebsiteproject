@@ -226,6 +226,31 @@ nav .nav-wrapper .nav-mobile a {
   color: #0f436e;
 }
 
+.aside-socials {
+  position: fixed;
+  top: 30%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  background-color: transparent;
+  list-style: none;
+}
+.aside-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #1a70b6;
+  padding: 20px;
+  margin: 5px;
+  clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+.aside-socials a img {
+  width: 25px;
+  height: 25px;
+}
+
 nav .nav-wrapper {
   padding-left: 15px;
 }
@@ -273,17 +298,22 @@ nav .nav-wrapper .nav-mobile a {
 }
 .heading .overlay .heading__title {
   margin: 0;
-  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+.heading .overlay .heading__title h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: "roboto-bold";
 }
 @media screen and (max-width: 840px) {
-  .heading .overlay .heading__title {
-    padding: 5%;
-  }
   .heading .overlay .heading__title h4 {
     text-align: center;
     font-size: 1em;
   }
-  .heading .overlay .heading__title h2 {
+  .heading .overlay .heading__title h1 {
     font-size: 2em;
     text-align: center;
   }
@@ -307,7 +337,7 @@ nav .nav-wrapper .nav-mobile a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 35px 0;
+  margin: 5% 0;
 }
 .heading .overlay .heading__title .heading__action a {
   margin-right: 15px;

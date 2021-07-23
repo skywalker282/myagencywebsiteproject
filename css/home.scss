@@ -51,14 +51,21 @@ nav {
     .heading {
       &__title {
         margin: 0;
-        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10%;
+        h1 {
+          text-align: center;
+          font-size: 40px;
+          font-family: "roboto-bold";
+        }
         @media screen and (max-width: 840px) {
-          padding: 5%;
           h4 {
             text-align: center;
             font-size: 1em;
           }
-          h2 {
+          h1 {
             font-size: 2em;
             text-align: center;
           }
@@ -83,7 +90,7 @@ nav {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            margin: 35px 0;
+            margin: 5% 0;
             a {
               margin-right: 15px;
               font-size: 28px;
