@@ -242,13 +242,13 @@ nav .nav-wrapper .nav-mobile a {
   align-items: center;
   padding: 1em;
   background-color: #1a70b6;
-  padding: 20px;
+  padding: 15px;
   margin: 5px;
   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
 .aside-socials a img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .offline-body {
