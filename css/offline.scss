@@ -1,0 +1,21 @@
+@import "./config";
+@import "./utilities";
+.offline-body {
+  background-color: $primary-light;
+
+  .offline-title {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 50px 100px;
+    color: $front-light;
+    font-family: "roboto-light";
+    font-size: 35px;
+  }
+  .offline-content {
+    padding: 100px 100px;
+    color: $front;
+    font-family: "roboto-thin";
+    font-size: 24px;
+  }
+}
