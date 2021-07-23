@@ -191,6 +191,10 @@ nav {
     background-color: $primary-light;
     padding: 15px;
     margin: 5px;
+    &:hover {
+      transition: 0.3s all;
+      background-color: $primary;
+    }
     clip-path: polygon(
       50% 0%,
       83% 12%,

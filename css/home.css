@@ -246,6 +246,10 @@ nav .nav-wrapper .nav-mobile a {
   margin: 5px;
   clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
 }
+.aside-socials a:hover {
+  transition: 0.3s all;
+  background-color: #0f436e;
+}
 .aside-socials a img {
   width: 20px;
   height: 20px;
