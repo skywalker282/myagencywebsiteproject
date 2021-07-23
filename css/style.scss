@@ -235,6 +235,12 @@
       }
       .description-action {
         margin: 25px auto;
+        a {
+          &:hover {
+            transition: 0.3s all;
+            background-color: $primary-light;
+          }
+        }
       }
       .call-talk {
         font-family: "roboto-thin";
@@ -274,8 +280,7 @@
           width: 50px;
           margin: 10px 0;
           &:hover {
-            background-color: transparent;
-            color: $primary;
+            background-color: $primary-light;
           }
         }
       }
@@ -297,8 +302,7 @@
         width: 250px;
         margin: 25px 0;
         &:hover {
-          color: $primary;
-          background-color: transparent;
+          background-color: $primary-light;
         }
       }
     }

@@ -91,7 +91,7 @@ nav {
               padding: 10px 15px;
               height: auto;
               &:hover {
-                background-color: transparent;
+                background-color: $primary-light;
               }
               @media screen and (max-width: 840px) {
                 padding: 5px 2px;

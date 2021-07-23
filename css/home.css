@@ -175,7 +175,10 @@ nav .nav-wrapper .nav-mobile a {
   border-radius: 100%;
   cursor: pointer;
   z-index: 900;
-  box-shadow: 0px 0px 10px #fff;
+  box-shadow: 0px 0px 10px #1a70b6;
+}
+.android-float:hover {
+  background-color: #1a70b6;
 }
 
 .modal {
@@ -314,7 +317,7 @@ nav .nav-wrapper .nav-mobile a {
   height: auto;
 }
 .heading .overlay .heading__title .heading__action a:hover {
-  background-color: transparent;
+  background-color: #1a70b6;
 }
 @media screen and (max-width: 840px) {
   .heading .overlay .heading__title .heading__action a {

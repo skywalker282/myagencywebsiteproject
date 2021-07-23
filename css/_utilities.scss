@@ -123,7 +123,10 @@ nav {
   border-radius: 100%;
   cursor: pointer;
   z-index: 900;
-  box-shadow: 0px 0px 10px $front;
+  box-shadow: 0px 0px 10px $primary-light;
+  &:hover {
+    background-color: $primary-light;
+  }
 }
 
 .modal {
