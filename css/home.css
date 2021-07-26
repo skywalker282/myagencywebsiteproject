@@ -398,7 +398,7 @@ nav .nav-wrapper .nav-mobile a {
 .passport .passport-content {
   display: flex;
   justify-content: space-between;
-  padding: 10% 15%;
+  padding: 15% 15%;
   width: 100%;
   background: white;
   background: radial-gradient(circle, white 0%, #0f436e 50%);
