@@ -175,7 +175,6 @@ nav .nav-wrapper .nav-mobile a {
   border-radius: 100%;
   cursor: pointer;
   z-index: 900;
-  box-shadow: 0px 0px 10px #1a70b6;
 }
 .android-float:hover {
   background-color: #1a70b6;

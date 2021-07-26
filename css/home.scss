@@ -57,13 +57,16 @@ nav {
         padding: 10%;
         h1 {
           text-align: center;
-          font-size: 40px;
+          font-size: 45px;
           font-family: "roboto-bold";
+        }
+        h4 {
+          font-size: 1.5em !important;
         }
         @media screen and (max-width: 840px) {
           h4 {
             text-align: center;
-            font-size: 1em;
+            font-size: 1em !important;
           }
           h1 {
             font-size: 2em;

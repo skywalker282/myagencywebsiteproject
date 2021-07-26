@@ -110,6 +110,7 @@ fetch(
   })
   .then((res) => {
     console.log(res);
+    if (res.articles == undefined) throw new Error("Expired request");
     res.articles = res.articles.slice(0, 9);
     res.articles.forEach((article) => {
       let newArticle = document.createElement("div");
