@@ -383,6 +383,25 @@ footer .col a {
   }
 }
 
+.hidden {
+  transition: 0.5s all;
+  display: none;
+}
+
+.install {
+  position: fixed !important;
+  bottom: 125px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+}
+.install:hover {
+  background-color: #1a70b6;
+}
+
 .bg-primary {
   background-color: #0f436e;
 }

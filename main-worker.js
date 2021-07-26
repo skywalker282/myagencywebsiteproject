@@ -1,12 +1,13 @@
 const OFFLINE_VERSION = 1;
 const CACHE_NAME = "offline";
 const OFFLINE_URL = "fallback.html";
+const OFFLINE_STYLE = "css/offline.css";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-
+      await cache.add(new Request(OFFLINE_STYLE, { cache: "reload" }));
       await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
     })()
   );

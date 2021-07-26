@@ -80,6 +80,46 @@ document.addEventListener("DOMContentLoaded", function () {
 //   document.documentElement.scrollTop = 0;
 // }
 
+//install prompt
+
+let deferredPrompt = null;
+let fireInstall = document.querySelector(".install");
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  deferredPrompt = event;
+  fireInstall.classList.remove("hidden");
+});
+
+fireInstall.addEventListener("click", (event) => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((result) => {
+      if (result.outcome === "dismissed") {
+        window.Notification.requestPermission().then(() => {
+          try {
+            new Notification("App installation", {
+              body: "By dismissing the prompt you refuse to install the app version of this webstite on your device",
+            });
+          } catch (error) {
+            alert("Notification aborted");
+          }
+        });
+      } else {
+        window.Notification.requestPermission().then(() => {
+          try {
+            new Notification("App installation", {
+              body: "The app version of the website was ionstalled on your device successfully",
+            });
+          } catch (error) {
+            alert("Notification aborted");
+          }
+        });
+      }
+    });
+  }
+});
+
 //chat open handling
 
 const startChat = document.querySelectorAll(".chat");
@@ -96,37 +136,6 @@ startChat.forEach((chat) => {
     chatZone.classList.remove("hidden");
   });
 });
-
-//info cards
-const mediaZone = document.querySelector(".article-block");
-
-let random = parseInt(Math.random() * 10);
-
-fetch(
-  `https://gnews.io/api/v4/search?q=africa%20AND%20investment&page=${random}&token=061ecf3ca67a9a953ca6e69439135033`
-)
-  .then((data) => {
-    return data.json();
-  })
-  .then((res) => {
-    console.log(res);
-    if (res.articles == undefined) throw new Error("Expired request");
-    res.articles = res.articles.slice(0, 9);
-    res.articles.forEach((article) => {
-      let newArticle = document.createElement("div");
-      newArticle.classList.add("col", "s12", "m3", "card-panel");
-      newArticle.innerHTML = `<img src=${article.image} alt="info">
-      <div class="card-body">
-          <h6 class="grey-text text-darken-1 title">${article.title}</h6>
-          <a class="blue-text source" href=${article.url}>${
-        article.source.name
-      }</a>
-          <p>${article.description.slice(0, 110) + "..."}</p>
-          <a class="right more" href=${article.url}>Read more >></a>
-      </div>`;
-      mediaZone.appendChild(newArticle);
-    });
-  });
 
 function checkEmailDB(destroyFeedback) {
   setTimeout(function () {

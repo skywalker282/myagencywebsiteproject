@@ -22,6 +22,25 @@
   }
 }
 
+.hidden {
+  transition: 0.5s all;
+  display: none;
+}
+
+.install {
+  position: fixed !important;
+  bottom: 125px;
+  right: 15px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 900;
+  &:hover {
+    background-color: $primary-light;
+  }
+}
+
 .bg-primary {
   background-color: $primary;
 }
