@@ -57,16 +57,17 @@ self.addEventListener("fetch", (event) => {
     caches.open(CACHE_NAME).then(async (cache) => {
       const cacheResponse = await cache.match(event.request);
       const fetchPromise = fetch(event.request).then((networkResponse) => {
+        if (event.request.url.includes("gnews")) {
+          if (networkResponse.articles) {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          } else {
+            return networkResponse;
+          }
+        }
         cache.put(event.request, networkResponse.clone());
         return networkResponse;
       });
-      if (request.url.includes("gnews")) {
-        if (fetchPromise.articles) {
-          return fetchPromise;
-        } else {
-          return cacheResponse;
-        }
-      }
       return cacheResponse || fetchPromise;
     })
   );

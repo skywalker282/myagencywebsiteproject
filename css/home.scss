@@ -367,6 +367,7 @@ nav {
 
 //job description
 .work {
+  overflow-x: scroll;
   &--title {
     @include section-title;
   }
@@ -392,6 +393,9 @@ nav {
         color: $primary;
         font-size: 24px;
         font-family: "roboto-thin";
+        @media screen and (max-width: 800px) {
+          font-size: 18px;
+        }
       }
     }
     &--compute {

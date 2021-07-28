@@ -99,6 +99,10 @@ input:-internal-autofill-selected {
   border-radius: 10px;
   -webkit-clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
   clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
+  @media screen and (max-width: 800px) {
+    padding: 0.1em 1em;
+    padding-right: 2em;
+  }
 }
 
 @mixin result-job {

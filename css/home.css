@@ -638,6 +638,9 @@ nav .nav-wrapper .nav-mobile a {
   margin: 15px 0;
 }
 
+.work {
+  overflow-x: scroll;
+}
 .work--title {
   text-align: center;
   font-family: "roboto-light";
@@ -662,6 +665,12 @@ nav .nav-wrapper .nav-mobile a {
   border-radius: 10px;
   -webkit-clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
   clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
+}
+@media screen and (max-width: 800px) {
+  .work-description--init {
+    padding: 0.1em 1em;
+    padding-right: 2em;
+  }
 }
 .work-description--init h5 {
   color: #1a70b6;
@@ -688,6 +697,11 @@ nav .nav-wrapper .nav-mobile a {
   font-size: 24px;
   font-family: "roboto-thin";
 }
+@media screen and (max-width: 800px) {
+  .work-description--process li {
+    font-size: 18px;
+  }
+}
 .work-description--compute {
   display: flex;
   flex-direction: column;
@@ -712,6 +726,12 @@ nav .nav-wrapper .nav-mobile a {
   border-radius: 10px;
   -webkit-clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
   clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
+}
+@media screen and (max-width: 800px) {
+  .work-description--automate {
+    padding: 0.1em 1em;
+    padding-right: 2em;
+  }
 }
 .work-description--automate h5 {
   color: #1a70b6;
