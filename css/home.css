@@ -387,12 +387,16 @@ nav .nav-wrapper .nav-mobile a {
 }
 
 .passport h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "roboto-light";
   margin: 0;
   color: #fff;
-  padding: 3% 0;
+  padding: 2.7% 0;
   background-color: #1a70b6;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
 }
 .passport .passport-content {
   display: flex;
@@ -454,12 +458,16 @@ nav .nav-wrapper .nav-mobile a {
   padding: 0;
 }
 .introduction .intro-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "roboto-light";
   margin: 0;
   color: #fff;
-  padding: 3% 0;
+  padding: 2.7% 0;
   background-color: #1a70b6;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
 }
 .introduction .me {
   display: flex;
@@ -564,12 +572,16 @@ nav .nav-wrapper .nav-mobile a {
   background: #0f436e;
 }
 .media h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "roboto-light";
   margin: 0;
   color: #fff;
-  padding: 3% 0;
+  padding: 2.7% 0;
   background-color: #1a70b6;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
 }
 .media > p {
   font-family: "roboto-thin";
@@ -642,18 +654,22 @@ nav .nav-wrapper .nav-mobile a {
   overflow-x: scroll;
 }
 .work--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-family: "roboto-light";
   margin: 0;
   color: #fff;
-  padding: 3% 0;
+  padding: 2.7% 0;
   background-color: #1a70b6;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 75%, 50% 100%, 45% 75%, 0% 75%);
 }
 .work-description {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 3em;
+  padding: 7em 3em;
   margin: 0 1%;
 }
 .work-description--init {
@@ -691,9 +707,12 @@ nav .nav-wrapper .nav-mobile a {
 }
 .work-description--process li {
   background-color: #9e9e9e;
-  padding: 3em 3em;
-  -webkit-clip-path: circle(33.8% at 50% 50%);
-  clip-path: circle(33.8% at 50% 50%);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  clip-path: polygon(9% 0, 100% 0%, 91% 100%, 0% 100%);
   color: #0f436e;
   font-size: 24px;
   font-family: "roboto-thin";
@@ -749,9 +768,12 @@ nav .nav-wrapper .nav-mobile a {
 }
 .work-description--result li {
   background-color: #9e9e9e;
-  padding: 3em 3em;
-  -webkit-clip-path: circle(33.8% at 50% 50%);
-  clip-path: circle(33.8% at 50% 50%);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+  clip-path: polygon(9% 0, 100% 0%, 91% 100%, 0% 100%);
   color: #0f436e;
   font-size: 24px;
   font-family: "roboto-thin";
