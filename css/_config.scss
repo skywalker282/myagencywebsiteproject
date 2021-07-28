@@ -79,3 +79,31 @@ input:-internal-autofill-selected {
     background-color: $primary;
   }
 }
+
+@mixin section-title {
+  text-align: center;
+  font-family: "roboto-light";
+  margin: 0;
+  color: $front;
+  padding: 3% 0;
+  background-color: $primary-light;
+}
+
+@mixin action-jobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $front;
+  padding: 0.1em 2em;
+  padding-right: 4em;
+  border-radius: 10px;
+  -webkit-clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
+  clip-path: polygon(74% 0, 82% 50%, 75% 100%, 0% 100%, 7% 49%, 0 0);
+}
+
+@mixin result-job {
+  background-color: $front-light;
+  padding: 3em 3em;
+  -webkit-clip-path: circle(33.8% at 50% 50%);
+  clip-path: circle(33.8% at 50% 50%);
+}

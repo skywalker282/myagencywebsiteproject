@@ -121,13 +121,7 @@ nav {
 
 .passport {
   h4 {
-    text-align: center;
-    font-family: "roboto-light";
-    margin: 0;
-    color: $front;
-    padding: 3% 0;
-    background-color: $primary-light;
-    box-shadow: 0px 0px 5px $front-light;
+    @include section-title;
   }
   .passport-content {
     display: flex;
@@ -191,12 +185,7 @@ nav {
     padding: 0;
   }
   .intro-title {
-    font-family: "roboto-light";
-    text-align: center;
-    border-bottom: 2px;
-    margin: 0;
-    padding: 3%;
-    background-color: $primary-light;
+    @include section-title;
   }
   .me {
     display: flex;
@@ -294,13 +283,7 @@ nav {
   padding-top: 0;
   background: $primary;
   h4 {
-    text-align: center;
-    font-family: "roboto-light";
-    margin: 0;
-    padding: 3% 0;
-    margin-bottom: 5%;
-    background-color: $primary-light;
-    box-shadow: 0px 0px 5px $front-light;
+    @include section-title;
   }
   // hr {
   //   height: 1px;
@@ -308,7 +291,7 @@ nav {
   //   border: none;
   // }
   & > p {
-    font-family: "roboto-light";
+    font-family: "roboto-thin";
     font-size: 20px;
     text-align: center;
     margin: 25px auto;
@@ -366,6 +349,78 @@ nav {
           text-decoration: none;
           margin: 15px 0;
         }
+      }
+    }
+  }
+}
+
+@mixin list-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  li {
+    display: block;
+    // margin: 1em auto;
+  }
+}
+
+.work {
+  &--title {
+    @include section-title;
+  }
+  &-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+    &--init {
+      @include action-jobs;
+      h5 {
+        color: $primary-light;
+        font-family: "roboto-bold";
+      }
+    }
+    &--process {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      @include list-jobs;
+      li {
+        @include result-job;
+        color: $primary;
+        font-size: 24px;
+        font-family: "roboto-thin";
+      }
+    }
+    &--compute {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i {
+        display: block;
+        font-size: 35px;
+        margin: 1em auto;
+        padding: 0.5em;
+        border-radius: 5px;
+        background-color: $front;
+        color: $primary-light;
+      }
+    }
+    &--automate {
+      @include action-jobs;
+      h5 {
+        color: $primary-light;
+        font-family: "roboto-bold";
+      }
+    }
+    &--result {
+      @include list-jobs;
+      li {
+        @include result-job;
+        color: $primary;
+        font-size: 24px;
+        font-family: "roboto-thin";
       }
     }
   }

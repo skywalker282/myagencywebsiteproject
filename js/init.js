@@ -114,6 +114,7 @@ fireInstall.addEventListener("click", (event) => {
           } catch (error) {
             alert("Notification aborted");
           }
+          fireInstall.classList.add("hidden");
         });
       }
     });
