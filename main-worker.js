@@ -60,6 +60,13 @@ self.addEventListener("fetch", (event) => {
         cache.put(event.request, networkResponse.clone());
         return networkResponse;
       });
+      if (request.url.includes("gnews")) {
+        if (fetchPromise.articles) {
+          return fetchPromise;
+        } else {
+          return cacheResponse;
+        }
+      }
       return cacheResponse || fetchPromise;
     })
   );
