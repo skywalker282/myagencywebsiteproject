@@ -109,6 +109,10 @@ input:-internal-autofill-selected {
   color: #0f436e;
 }
 
+.text-front-light {
+  color: #9e9e9e !important;
+}
+
 nav .nav-wrapper {
   padding-left: 15px;
 }

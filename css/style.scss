@@ -190,6 +190,18 @@
 }
 
 .about {
+  background: rgb(15, 67, 110);
+  background: radial-gradient(
+    circle,
+    rgba(15, 67, 110, 1) 0%,
+    rgba(26, 112, 182, 1) 70%
+  );
+  .project__title {
+    background-color: $front !important;
+  }
+  * {
+    color: $front;
+  }
   &__hero {
     position: relative;
     height: 200px;
@@ -204,7 +216,7 @@
       position: absolute;
       left: 50px;
       bottom: -100px;
-      border: 10px solid $front;
+      border: 10px solid $primary-light;
       border-radius: 50%;
     }
   }
@@ -212,14 +224,9 @@
     margin-top: 125px;
     display: flex;
     flex-wrap: wrap;
-    background: rgb(15, 67, 110);
-    background: linear-gradient(
-      14deg,
-      rgba(15, 67, 110, 1) 0%,
-      rgba(255, 255, 255, 1) 70%
-    );
     & > h3 {
       margin-left: 150px;
+      font-family: "roboto-light";
       @media screen and (max-width: 900px) {
         margin-left: 25px;
       }
@@ -249,23 +256,11 @@
       .sylvia {
         display: flex;
         justify-content: center;
-        background: rgb(15, 67, 110);
-        background: linear-gradient(
-          14deg,
-          rgba(15, 67, 110, 1) 0%,
-          rgba(255, 255, 255, 1) 70%
-        );
         @media screen and (max-width: 900px) {
           width: 50%;
           margin: auto;
         }
         .card-panel {
-          background: rgb(15, 67, 110);
-          background: linear-gradient(
-            14deg,
-            rgba(15, 67, 110, 1) 0%,
-            rgba(255, 255, 255, 1) 70%
-          );
         }
         img {
           width: 80px;
