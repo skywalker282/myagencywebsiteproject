@@ -52,23 +52,24 @@ self.addEventListener("fetch", (event) => {
         }
       })()
     );
-  }
-  event.respondWith(
-    caches.open(CACHE_NAME).then(async (cache) => {
-      const cacheResponse = await cache.match(event.request);
-      const fetchPromise = fetch(event.request).then((networkResponse) => {
-        if (event.request.url.includes("gnews")) {
-          if (networkResponse.articles) {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          } else {
-            return cacheResponse;
+  } else {
+    event.respondWith(
+      caches.open(CACHE_NAME).then(async (cache) => {
+        const cacheResponse = await cache.match(event.request);
+        const fetchPromise = fetch(event.request).then((networkResponse) => {
+          if (event.request.url.includes("gnews")) {
+            if (networkResponse.articles) {
+              cache.put(event.request, networkResponse.clone());
+              return networkResponse;
+            } else {
+              return cacheResponse;
+            }
           }
-        }
-        cache.put(event.request, networkResponse.clone());
-        return networkResponse;
-      });
-      return cacheResponse || fetchPromise;
-    })
-  );
+          cache.put(event.request, networkResponse.clone());
+          return networkResponse;
+        });
+        return cacheResponse || fetchPromise;
+      })
+    );
+  }
 });
