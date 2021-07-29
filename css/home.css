@@ -386,6 +386,10 @@ nav .nav-wrapper .nav-mobile a {
   margin-bottom: 0 !important;
 }
 
+.passport {
+  background: white;
+  background: radial-gradient(circle, white 0%, #0f436e 50%);
+}
 .passport h4 {
   display: flex;
   justify-content: center;
@@ -403,8 +407,6 @@ nav .nav-wrapper .nav-mobile a {
   justify-content: space-between;
   padding: 15% 15%;
   width: 100%;
-  background: white;
-  background: radial-gradient(circle, white 0%, #0f436e 50%);
 }
 @media screen and (max-width: 840px) {
   .passport .passport-content {

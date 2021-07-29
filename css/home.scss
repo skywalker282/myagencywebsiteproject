@@ -120,6 +120,12 @@ nav {
 }
 
 .passport {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(15, 67, 110, 1) 50%
+  );
   h4 {
     @include section-title;
   }
@@ -136,12 +142,6 @@ nav {
         border: 5px solid $front;
       }
     }
-    background: rgb(255, 255, 255);
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(15, 67, 110, 1) 50%
-    );
     .passport-profile {
       width: 25vw;
       border: 15px solid $front;
