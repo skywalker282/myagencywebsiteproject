@@ -120,34 +120,33 @@ nav {
 }
 
 .passport {
-  background: rgb(255, 255, 255);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(15, 67, 110, 1) 50%
-  );
+  background: $primary;
   h4 {
     @include section-title;
   }
   .passport-content {
     display: flex;
     justify-content: space-between;
-    padding: 15% 15%;
+    padding: 5% 15%;
     width: 100%;
     @media screen and (max-width: 840px) {
       flex-direction: column;
       align-items: center;
       &-profile {
         width: 80vw;
-        border: 5px solid $front;
+        border: 5px solid $primary-light;
       }
     }
     .passport-profile {
       width: 25vw;
-      border: 15px solid $front;
+      border: 15px solid $primary-light;
       border-radius: 50%;
       overflow: hidden;
       height: 23vw;
+      @media screen and (max-width: 840px) {
+        border: 5px solid $primary-light;
+        margin-bottom: 10%;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -157,6 +156,7 @@ nav {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      background-color: $primary;
       p {
         display: flex;
         align-items: center;
@@ -169,6 +169,7 @@ nav {
           font-family: "roboto-light";
           font-size: 24px;
           margin-left: 1em;
+          color: $front-light;
         }
       }
     }
@@ -295,6 +296,7 @@ nav {
     font-size: 20px;
     text-align: center;
     margin: 25px auto;
+    color: $front !important;
   }
   .article-block {
     margin: 25px;

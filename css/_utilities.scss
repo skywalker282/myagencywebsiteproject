@@ -194,6 +194,7 @@ nav {
 
 .aside-socials {
   position: fixed;
+  z-index: 999;
   top: 30%;
   background-color: transparent;
   display: flex;
