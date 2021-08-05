@@ -41,8 +41,15 @@
   }
 }
 
+.rel-pos {
+  position: relative;
+}
+
 .bg-primary {
   background-color: $primary;
+}
+.bg-primary-dark {
+  background-color: $primary-dark;
 }
 .bg-prim-light {
   background-color: $primary-light;
@@ -127,9 +134,16 @@ nav {
   }
 }
 
-.footer-copyright {
-  box-shadow: 0px 0px 10px $primary-light;
-  margin-top: 3%;
+footer {
+  a {
+    &:hover {
+      transition: all;
+      font-family: "roboto-light";
+    }
+  }
+  .footer-copyright {
+    margin-top: 3%;
+  }
 }
 
 .hidden {

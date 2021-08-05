@@ -282,7 +282,7 @@ nav {
 .media {
   padding: 30px 0;
   padding-top: 0;
-  background: $primary;
+  background-color: $primary;
   h4 {
     @include section-title;
   }
@@ -297,6 +297,7 @@ nav {
     text-align: center;
     margin: 25px auto;
     color: $front !important;
+    clear: both;
   }
   .article-block {
     margin: 25px;
@@ -369,15 +370,16 @@ nav {
 
 //job description
 .work {
-  overflow-x: scroll;
+  // overflow-x: scroll;
   &--title {
     @include section-title;
   }
   &-description {
+    clear: both;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7em 3em;
+    padding: 2em 3em 7em;
     margin: 0 1%;
     &--init {
       @include action-jobs;

@@ -50,6 +50,26 @@ input:-internal-autofill-selected {
   background-color: transparent !important;
 }
 
+.title-reverse {
+  float: left;
+  position: relative;
+  top: -30px;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "roboto-light";
+  margin: 0;
+  color: #fff;
+  padding: 1% 3%;
+  background-color: #1a70b6;
+  width: fit-content;
+  border-radius: 0px 30px 30px 0px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+}
+
 .heading {
   background: url("../img/coder.jpeg");
   background-attachment: fixed;
@@ -223,16 +243,6 @@ input:-internal-autofill-selected {
   font-family: "roboto-light";
 }
 
-.about {
-  background: #0f436e;
-  background: radial-gradient(circle, #0f436e 0%, #1a70b6 70%);
-}
-.about .project__title {
-  background-color: #fff !important;
-}
-.about * {
-  color: #fff;
-}
 .about__hero {
   position: relative;
   height: 200px;
@@ -248,94 +258,109 @@ input:-internal-autofill-selected {
   position: absolute;
   left: 50px;
   bottom: -100px;
-  border: 10px solid #1a70b6;
+  border: 10px solid #fff;
   border-radius: 50%;
 }
 .about__content {
-  margin-top: 125px;
+  background-color: #fff;
   display: flex;
+  justify-content: center;
+  padding: 7% 0;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
-.about__content > h3 {
-  margin-left: 150px;
-  font-family: "roboto-light";
-}
-@media screen and (max-width: 900px) {
-  .about__content > h3 {
-    margin-left: 25px;
+@media screen and (max-width: 600px) {
+  .about__content {
+    padding: 25% 5% 5%;
   }
 }
-.about__content .mydescription {
-  margin-left: 200px;
-  font-family: "roboto-light";
+.about__content .presentation {
+  background: #fff;
+  border-radius: 5%;
+  padding: 1% 2% 5%;
+  margin: 1% !important;
+  position: relative;
 }
-.about__content .mydescription .m8 {
-  padding-right: 20%;
-}
-@media screen and (max-width: 900px) {
-  .about__content .mydescription {
-    margin-left: 50px;
-  }
-}
-.about__content .mydescription .description-action {
-  margin: 25px auto;
-}
-.about__content .mydescription .description-action a:hover {
-  transition: 0.3s all;
-  background-color: #1a70b6;
-}
-.about__content .mydescription .call-talk {
+.about__content .presentation h4 {
   font-family: "roboto-thin";
-  margin: 25px auto;
-}
-.about__content .mydescription .sylvia {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-@media screen and (max-width: 900px) {
-  .about__content .mydescription .sylvia {
-    width: 50%;
-    margin: auto;
-  }
-}
-.about__content .mydescription .sylvia img {
-  width: 80px;
+.about__content .presentation h4 img {
+  width: 60px;
   border-radius: 50%;
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
 }
-.about__content .mydescription .sylvia a {
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  margin: 10px 0;
-}
-.about__content .mydescription .sylvia a:hover {
-  background-color: #1a70b6;
-}
-.about__content .curriculum {
-  margin-left: 200px;
-  margin-bottom: 50px;
-  padding-right: 50%;
-}
-@media screen and (max-width: 900px) {
-  .about__content .curriculum {
-    margin-left: 50px;
-  }
-}
-.about__content .curriculum h5 {
+.about__content .presentation p {
   font-family: "roboto-thin";
+  font-size: 18px;
 }
-.about__content .curriculum a {
+.about__content .presentation .actions {
+  margin: 2.5em 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 250px;
-  margin: 25px 0;
 }
-.about__content .curriculum a:hover {
+.about__content .presentation .actions a {
+  font-size: 20px;
+  display: block;
+  padding: 0.3em 0.6em;
+  margin: 0.3em;
+  border-radius: 0.2em;
   background-color: #1a70b6;
+  color: #fff;
+  font-family: "roboto-light";
+  width: fit-content;
+}
+.about__content .sylvia {
+  background: #fff;
+  border-radius: 5%;
+  padding: 1% 2% 5%;
+  margin: 1% !important;
+  position: relative;
+}
+.about__content .sylvia h4 {
+  font-family: "roboto-thin";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__content .sylvia h4 img {
+  width: 60px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
+}
+.about__content .sylvia p {
+  font-family: "roboto-thin";
+  font-size: 18px;
+}
+.about__content .sylvia .actions {
+  margin: 2.5em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__content .sylvia .actions a {
+  font-size: 20px;
+  display: block;
+  padding: 0.3em 0.6em;
+  margin: 0.3em;
+  border-radius: 0.2em;
+  background-color: #1a70b6;
+  color: #fff;
+  font-family: "roboto-light";
+  width: fit-content;
+}
+.about__talk {
+  margin: 0em 3em 3em;
+  text-align: center;
+  font-family: "roboto-thin";
+  font-size: 21px;
 }
 
 footer .col {
@@ -405,8 +430,16 @@ footer .col a {
   background-color: #1a70b6;
 }
 
+.rel-pos {
+  position: relative;
+}
+
 .bg-primary {
   background-color: #0f436e;
+}
+
+.bg-primary-dark {
+  background-color: #05335c;
 }
 
 .bg-prim-light {
@@ -418,7 +451,7 @@ footer .col a {
 }
 
 .text-front-light {
-  color: #9e9e9e !important;
+  color: #f7f7f7 !important;
 }
 
 nav .nav-wrapper {
@@ -488,8 +521,11 @@ nav .nav-wrapper .nav-mobile a {
   width: 100% !important;
 }
 
-.footer-copyright {
-  box-shadow: 0px 0px 10px #1a70b6;
+footer a:hover {
+  transition: all;
+  font-family: "roboto-light";
+}
+footer .footer-copyright {
   margin-top: 3%;
 }
 

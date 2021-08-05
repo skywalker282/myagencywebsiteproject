@@ -190,18 +190,6 @@
 }
 
 .about {
-  background: rgb(15, 67, 110);
-  background: radial-gradient(
-    circle,
-    rgba(15, 67, 110, 1) 0%,
-    rgba(26, 112, 182, 1) 70%
-  );
-  .project__title {
-    background-color: $front !important;
-  }
-  * {
-    color: $front;
-  }
   &__hero {
     position: relative;
     height: 200px;
@@ -216,91 +204,73 @@
       position: absolute;
       left: 50px;
       bottom: -100px;
-      border: 10px solid $primary-light;
+      border: 10px solid $front;
       border-radius: 50%;
     }
   }
   &__content {
-    margin-top: 125px;
+    background-color: $front;
     display: flex;
+    justify-content: center;
+    padding: 7% 0;
     flex-wrap: wrap;
-    & > h3 {
-      margin-left: 150px;
-      font-family: "roboto-light";
-      @media screen and (max-width: 900px) {
-        margin-left: 25px;
-      }
+    margin-bottom: 0;
+    @media screen and (max-width: 600px) {
+      padding: 25% 5% 5%;
     }
-    .mydescription {
-      margin-left: 200px;
-      font-family: "roboto-light";
-      .m8 {
-        padding-right: 20%;
-      }
-      @media screen and (max-width: 900px) {
-        margin-left: 50px;
-      }
-      .description-action {
-        margin: 25px auto;
-        a {
-          &:hover {
-            transition: 0.3s all;
-            background-color: $primary-light;
-          }
-        }
-      }
-      .call-talk {
+    @mixin about_block {
+      background: $front;
+      border-radius: 5%;
+      padding: 1% 2% 5%;
+      margin: 1% !important;
+      position: relative;
+      h4 {
         font-family: "roboto-thin";
-        margin: 25px auto;
-      }
-      .sylvia {
         display: flex;
-        justify-content: center;
-        @media screen and (max-width: 900px) {
-          width: 50%;
-          margin: auto;
-        }
-        .card-panel {
-        }
-        img {
-          width: 80px;
-          border-radius: 50%;
-        }
-        a {
-          border-radius: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 50px;
-          width: 50px;
-          margin: 10px 0;
-          &:hover {
-            background-color: $primary-light;
-          }
-        }
-      }
-    }
-    .curriculum {
-      margin-left: 200px;
-      margin-bottom: 50px;
-      padding-right: 50%;
-      @media screen and (max-width: 900px) {
-        margin-left: 50px;
-      }
-      h5 {
-        font-family: "roboto-thin";
-      }
-      a {
-        display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 250px;
-        margin: 25px 0;
-        &:hover {
+        img {
+          width: 60px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 35px;
+          right: 30px;
+        }
+      }
+      p {
+        font-family: "roboto-thin";
+        font-size: 18px;
+      }
+      .actions {
+        margin: 2.5em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          font-size: 20px;
+          display: block;
+          padding: 0.3em 0.6em;
+          margin: 0.3em;
+          border-radius: 0.2em;
           background-color: $primary-light;
+          color: $front;
+          font-family: "roboto-light";
+          width: fit-content;
         }
       }
     }
+    .presentation {
+      @include about_block;
+    }
+    .sylvia {
+      @include about_block;
+    }
+  }
+  &__talk {
+    margin: 0em 3em 3em;
+    text-align: center;
+    font-family: "roboto-thin";
+    font-size: 21px;
   }
 }
 
