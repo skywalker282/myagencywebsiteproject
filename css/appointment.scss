@@ -40,42 +40,58 @@ nav {
 }
 
 .appointment {
-  padding: 50px 20px 100px;
+  padding: 0;
   background-color: $front-light;
-
-  h3 {
-    text-align: center;
-    font-family: "roboto-light";
-    margin: 0;
-    margin-bottom: 25px;
+  .row {
+    margin-bottom: 0px;
+  }
+  .header {
+    height: 30vh;
+    background-image: url("../img/appointment.jpeg");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: repeat;
+    h4 {
+      display: flex;
+      align-items: center;
+      background-color: #2195f33d;
+      font-family: "roboto-black";
+      margin: 0;
+      padding: 0em 2em;
+      width: 100%;
+      height: 100%;
+      color: $primary !important;
+    }
   }
   p {
-    font-size: 24px;
+    font-size: 22px;
     font-family: "roboto-thin";
     text-align: center;
     margin-bottom: 25px;
+    padding: 3em 5em 2em;
   }
   .card {
-    border-radius: 15px;
-    background-color: $primary;
+    border-radius: 5px;
+    margin-bottom: 6rem;
+    // background-color: $primary;
 
     ul.stepper .step:not(:last-of-type)::after {
-      background-color: $primary-light !important;
+      // background-color: $primary-light !important;
     }
     .step-content {
       &::after {
-        color: $front !important;
-        background-color: $front !important;
+        // color: $front !important;
+        // background-color: $front !important;
       }
       .step-title {
         * {
-          color: $front !important;
+          // color: $front !important;
         }
         &::before {
-          background-color: $front;
+          // background-color: $front;
         }
         &::after {
-          color: $front !important;
+          // color: $front !important;
         }
       }
       .switch label input[type="checkbox"]:checked + .lever {
@@ -87,10 +103,10 @@ nav {
       input {
         font-family: "roboto-light";
         &:hover {
-          border-color: $front !important;
+          // border-color: $front !important;
         }
         &:focus {
-          border-color: $front !important;
+          // border-color: $front !important;
         }
       }
       label {
@@ -101,7 +117,7 @@ nav {
         font-family: "roboto-thin" !important;
       }
       i {
-        color: $front-light;
+        color: $primary;
         &:hover {
           color: $front;
         }
@@ -113,17 +129,25 @@ nav {
       }
       .input-field {
         * {
-          color: $front-light;
+          // color: $front-light;
         }
       }
       .timepicker-digital-display {
         * {
-          color: $primary-light !important;
+          color: $front-light !important;
         }
       }
       .timepicker-tick {
         background-color: $primary !important;
         color: $front-light;
+        &:focus {
+          background-color: $front-light !important;
+          color: $primary !important;
+        }
+        &:hover {
+          background-color: $front-light !important;
+          color: $primary !important;
+        }
       }
       .timepicker-canvas-bearing {
         fill: $primary;
@@ -137,13 +161,14 @@ nav {
       h5 {
         text-align: center;
         font-family: "roboto-light";
-        color: $front-light;
+        color: $primary-light;
       }
       button {
-        color: $front-light !important;
+        background-color: $front-light;
+        color: $primary !important;
         &:hover {
           transition: 0.3s color;
-          background-color: $front-light;
+          background-color: $front;
           color: $primary !important;
         }
       }
@@ -151,7 +176,7 @@ nav {
         font-size: 18px;
         font-family: "roboto-thin";
         text-align: center;
-        color: $front-light;
+        color: $primary-light;
         font-size: 20px;
         margin: 15px 0;
       }

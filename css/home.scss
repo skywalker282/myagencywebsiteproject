@@ -121,7 +121,7 @@ nav {
 
 .passport {
   background: $primary;
-  h4 {
+  & > h5 {
     @include section-title;
   }
   .passport-content {
@@ -283,7 +283,7 @@ nav {
   padding: 30px 0;
   padding-top: 0;
   background-color: $front-light;
-  h4 {
+  & > h5 {
     @include section-title;
   }
   // hr {

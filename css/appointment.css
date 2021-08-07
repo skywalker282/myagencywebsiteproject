@@ -15,8 +15,8 @@
   src: url("../Roboto/Roboto-Light.ttf");
 }
 @font-face {
-  font-family: "roboto-reg";
-  src: url("../Roboto/Roboto-Regular.ttf");
+  font-family: "roboto-black";
+  src: url("../Roboto/Roboto-Black.ttf");
 }
 * {
   box-sizing: border-box;
@@ -59,7 +59,7 @@ input:-internal-autofill-selected {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "roboto-light";
+  font-family: "roboto-black";
   margin: 0;
   color: #fff;
   padding: 1% 3%;
@@ -68,6 +68,7 @@ input:-internal-autofill-selected {
   border-radius: 0px 30px 30px 0px;
   float: right;
   border-radius: 30px 0px 0px 30px;
+  font-family: "roboto-black";
 }
 
 .chat-zone {
@@ -344,40 +345,40 @@ nav .nav-wrapper .nav-mobile a {
 }
 
 .appointment {
-  padding: 50px 20px 100px;
+  padding: 0;
   background-color: #f7f7f7;
 }
-.appointment h3 {
-  text-align: center;
-  font-family: "roboto-light";
+.appointment .row {
+  margin-bottom: 0px;
+}
+.appointment .header {
+  height: 30vh;
+  background-image: url("../img/appointment.jpeg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: repeat;
+}
+.appointment .header h4 {
+  display: flex;
+  align-items: center;
+  background-color: #2195f33d;
+  font-family: "roboto-black";
   margin: 0;
-  margin-bottom: 25px;
+  padding: 0em 2em;
+  width: 100%;
+  height: 100%;
+  color: #0f436e !important;
 }
 .appointment p {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "roboto-thin";
   text-align: center;
   margin-bottom: 25px;
+  padding: 3em 5em 2em;
 }
 .appointment .card {
-  border-radius: 15px;
-  background-color: #0f436e;
-}
-.appointment .card ul.stepper .step:not(:last-of-type)::after {
-  background-color: #1a70b6 !important;
-}
-.appointment .card .step-content::after {
-  color: #fff !important;
-  background-color: #fff !important;
-}
-.appointment .card .step-content .step-title * {
-  color: #fff !important;
-}
-.appointment .card .step-content .step-title::before {
-  background-color: #fff;
-}
-.appointment .card .step-content .step-title::after {
-  color: #fff !important;
+  border-radius: 5px;
+  margin-bottom: 6rem;
 }
 .appointment .card .step-content .switch label input[type=checkbox]:checked + .lever {
   background-color: #1a70b6;
@@ -388,12 +389,6 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content input {
   font-family: "roboto-light";
 }
-.appointment .card .step-content input:hover {
-  border-color: #fff !important;
-}
-.appointment .card .step-content input:focus {
-  border-color: #fff !important;
-}
 .appointment .card .step-content label {
   font-family: "roboto-light" !important;
 }
@@ -402,7 +397,7 @@ nav .nav-wrapper .nav-mobile a {
   font-family: "roboto-thin" !important;
 }
 .appointment .card .step-content i {
-  color: #f7f7f7;
+  color: #0f436e;
 }
 .appointment .card .step-content i:hover {
   color: #fff;
@@ -410,15 +405,20 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content .datepicker-date-display * {
   color: #f7f7f7 !important;
 }
-.appointment .card .step-content .input-field * {
-  color: #f7f7f7;
-}
 .appointment .card .step-content .timepicker-digital-display * {
-  color: #1a70b6 !important;
+  color: #f7f7f7 !important;
 }
 .appointment .card .step-content .timepicker-tick {
   background-color: #0f436e !important;
   color: #f7f7f7;
+}
+.appointment .card .step-content .timepicker-tick:focus {
+  background-color: #f7f7f7 !important;
+  color: #0f436e !important;
+}
+.appointment .card .step-content .timepicker-tick:hover {
+  background-color: #f7f7f7 !important;
+  color: #0f436e !important;
 }
 .appointment .card .step-content .timepicker-canvas-bearing {
   fill: #0f436e;
@@ -432,21 +432,22 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content h5 {
   text-align: center;
   font-family: "roboto-light";
-  color: #f7f7f7;
+  color: #1a70b6;
 }
 .appointment .card .step-content button {
-  color: #f7f7f7 !important;
+  background-color: #f7f7f7;
+  color: #0f436e !important;
 }
 .appointment .card .step-content button:hover {
   transition: 0.3s color;
-  background-color: #f7f7f7;
+  background-color: #fff;
   color: #0f436e !important;
 }
 .appointment .card .step-content p {
   font-size: 18px;
   font-family: "roboto-thin";
   text-align: center;
-  color: #f7f7f7;
+  color: #1a70b6;
   font-size: 20px;
   margin: 15px 0;
 }
