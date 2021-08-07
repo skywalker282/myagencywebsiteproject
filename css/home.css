@@ -359,6 +359,7 @@ nav .nav-wrapper .brand-logo img {
 }
 .heading .overlay {
   background-color: #2195f33d;
+  padding: 2em 0;
 }
 .heading .overlay .heading__title {
   margin: 0;
