@@ -373,7 +373,7 @@ nav .nav-wrapper .nav-mobile a {
   font-size: 22px;
   font-family: "roboto-thin";
   text-align: center;
-  margin-bottom: 25px;
+  margin: 25px auto;
   padding: 3em 5em 2em;
 }
 .appointment .card {

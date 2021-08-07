@@ -648,7 +648,7 @@ nav .nav-wrapper .nav-mobile a {
   font-family: "roboto-thin";
   font-size: 22px;
   text-align: center;
-  margin: 25px 2em;
+  margin: 3px 2em 1em;
   clear: both;
 }
 .media .article-block {
@@ -656,6 +656,9 @@ nav .nav-wrapper .nav-mobile a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.media .article-block img {
+  margin: 5rem auto 8rem;
 }
 .media .article-block .card-panel {
   padding: 0;
