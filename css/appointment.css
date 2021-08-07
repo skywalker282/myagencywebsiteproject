@@ -50,6 +50,26 @@ input:-internal-autofill-selected {
   background-color: transparent !important;
 }
 
+.title-reverse {
+  float: left;
+  position: relative;
+  top: -30px;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "roboto-light";
+  margin: 0;
+  color: #fff;
+  padding: 1% 3%;
+  background-color: #1a70b6;
+  width: fit-content;
+  border-radius: 0px 30px 30px 0px;
+  float: right;
+  border-radius: 30px 0px 0px 30px;
+}
+
 .chat-zone {
   z-index: 1200;
   position: fixed;
@@ -97,8 +117,16 @@ input:-internal-autofill-selected {
   background-color: #1a70b6;
 }
 
+.rel-pos {
+  position: relative;
+}
+
 .bg-primary {
   background-color: #0f436e;
+}
+
+.bg-primary-dark {
+  background-color: #05335c;
 }
 
 .bg-prim-light {
@@ -107,6 +135,10 @@ input:-internal-autofill-selected {
 
 .text-primary {
   color: #0f436e;
+}
+
+.text-front-light {
+  color: #f7f7f7 !important;
 }
 
 nav .nav-wrapper {
@@ -176,8 +208,11 @@ nav .nav-wrapper .nav-mobile a {
   width: 100% !important;
 }
 
-.footer-copyright {
-  box-shadow: 0px 0px 10px #1a70b6;
+footer a:hover {
+  transition: all;
+  font-family: "roboto-light";
+}
+footer .footer-copyright {
   margin-top: 3%;
 }
 
@@ -246,6 +281,7 @@ nav .nav-wrapper .nav-mobile a {
 
 .aside-socials {
   position: fixed;
+  z-index: 999;
   top: 30%;
   background-color: transparent;
   display: flex;
@@ -309,8 +345,7 @@ nav .nav-wrapper .nav-mobile a {
 
 .appointment {
   padding: 50px 20px 100px;
-  background: #0f436e;
-  background-color: #1a70b6;
+  background-color: #f7f7f7;
 }
 .appointment h3 {
   text-align: center;
@@ -367,23 +402,23 @@ nav .nav-wrapper .nav-mobile a {
   font-family: "roboto-thin" !important;
 }
 .appointment .card .step-content i {
-  color: #9e9e9e;
+  color: #f7f7f7;
 }
 .appointment .card .step-content i:hover {
   color: #fff;
 }
 .appointment .card .step-content .datepicker-date-display * {
-  color: #9e9e9e !important;
+  color: #f7f7f7 !important;
 }
 .appointment .card .step-content .input-field * {
-  color: #9e9e9e;
+  color: #f7f7f7;
 }
 .appointment .card .step-content .timepicker-digital-display * {
   color: #1a70b6 !important;
 }
 .appointment .card .step-content .timepicker-tick {
   background-color: #0f436e !important;
-  color: #9e9e9e;
+  color: #f7f7f7;
 }
 .appointment .card .step-content .timepicker-canvas-bearing {
   fill: #0f436e;
@@ -397,21 +432,21 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card .step-content h5 {
   text-align: center;
   font-family: "roboto-light";
-  color: #9e9e9e;
+  color: #f7f7f7;
 }
 .appointment .card .step-content button {
-  color: #9e9e9e !important;
+  color: #f7f7f7 !important;
 }
 .appointment .card .step-content button:hover {
   transition: 0.3s color;
-  background-color: #9e9e9e;
+  background-color: #f7f7f7;
   color: #0f436e !important;
 }
 .appointment .card .step-content p {
   font-size: 18px;
   font-family: "roboto-thin";
   text-align: center;
-  color: #9e9e9e;
+  color: #f7f7f7;
   font-size: 20px;
   margin: 15px 0;
 }
