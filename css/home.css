@@ -657,7 +657,7 @@ nav .nav-wrapper .nav-mobile a {
   flex-wrap: wrap;
   justify-content: center;
 }
-.media .article-block img {
+.media .article-block .spinner-block {
   margin: 5rem auto 8rem;
 }
 .media .article-block .card-panel {
