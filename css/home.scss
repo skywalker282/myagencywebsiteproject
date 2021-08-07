@@ -369,11 +369,11 @@ nav {
 .work {
   // overflow-x: scroll;
   width: 100vw;
-  overflow-x: scroll;
   &--title {
     @include section-title;
   }
   &-description {
+    overflow-x: scroll;
     width: 100%;
     clear: both;
     display: flex;

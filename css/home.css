@@ -722,7 +722,6 @@ nav .nav-wrapper .brand-logo img {
 
 .work {
   width: 100vw;
-  overflow-x: scroll;
 }
 .work--title {
   float: left;
@@ -742,6 +741,7 @@ nav .nav-wrapper .brand-logo img {
   border-radius: 0px 30px 30px 0px;
 }
 .work-description {
+  overflow-x: scroll;
   width: 100%;
   clear: both;
   display: flex;
