@@ -652,7 +652,7 @@ nav .nav-wrapper .nav-mobile a {
   clear: both;
 }
 .media .article-block {
-  margin: 25px;
+  margin: 2rem 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
