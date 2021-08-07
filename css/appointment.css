@@ -384,9 +384,21 @@ nav .nav-wrapper .nav-mobile a {
   margin: 25px auto;
   padding: 3em 5em 2em;
 }
+@media screen and (max-width: 750) {
+  .appointment p {
+    padding: 0;
+  }
+}
 .appointment .card {
   border-radius: 5px;
   margin-bottom: 6rem;
+}
+.appointment .card .step-content {
+  overflow: hidden !important;
+}
+.appointment .card .step-content .container {
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .appointment .card .step-content .switch label input[type=checkbox]:checked + .lever {
   background-color: #1a70b6;
@@ -458,6 +470,11 @@ nav .nav-wrapper .nav-mobile a {
   color: #1a70b6;
   font-size: 20px;
   margin: 15px 0;
+}
+@media screen and (max-width: 750) {
+  .appointment .card .step-content p {
+    padding: 0;
+  }
 }
 .appointment .card .step-content .switch {
   display: flex;

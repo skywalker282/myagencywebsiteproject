@@ -368,10 +368,13 @@ nav {
 //job description
 .work {
   // overflow-x: scroll;
+  width: 100vw;
+  overflow-x: scroll;
   &--title {
     @include section-title;
   }
   &-description {
+    width: 100%;
     clear: both;
     display: flex;
     justify-content: space-between;
@@ -434,10 +437,18 @@ nav {
 }
 
 .contact {
+  & > h5 {
+    @include section-title;
+  }
+  clear: both;
   .row {
     display: flex;
+    clear: both;
     flex-wrap: wrap;
-    padding: 30px 0;
+    padding: 30px 10rem;
+    @media screen and (max-width: 700px) {
+      padding: 5rem 2rem;
+    }
     .form {
       h4 {
         font-family: "roboto-bold";
