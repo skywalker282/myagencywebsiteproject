@@ -1,3 +1,13 @@
+.nav-mobile {
+  a {
+    font-family: "roboto-light";
+    &:hover {
+      transition: 0.3s all;
+      font-weight: 700;
+    }
+  }
+}
+
 .chat-zone {
   z-index: 1200;
   position: fixed;

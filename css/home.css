@@ -71,6 +71,14 @@ input:-internal-autofill-selected {
   font-family: "roboto-black";
 }
 
+.nav-mobile a {
+  font-family: "roboto-light";
+}
+.nav-mobile a:hover {
+  transition: 0.3s all;
+  font-weight: 700;
+}
+
 .chat-zone {
   z-index: 1200;
   position: fixed;
@@ -339,9 +347,6 @@ nav .nav-wrapper .brand-logo .second {
 nav .nav-wrapper .brand-logo img {
   width: 40px;
   margin-right: 20px !important;
-}
-nav .nav-wrapper .nav-mobile a {
-  font-family: "roboto-light";
 }
 
 .heading {

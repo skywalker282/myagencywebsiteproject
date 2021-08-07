@@ -71,6 +71,14 @@ input:-internal-autofill-selected {
   font-family: "roboto-black";
 }
 
+.nav-mobile a {
+  font-family: "roboto-light";
+}
+.nav-mobile a:hover {
+  transition: 0.3s all;
+  font-weight: 700;
+}
+
 .chat-zone {
   z-index: 1200;
   position: fixed;
