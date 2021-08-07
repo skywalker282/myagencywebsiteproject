@@ -25,6 +25,7 @@ fetch(
           <p>${article.description.slice(0, 110) + "..."}</p>
           <a class="right more" href=${article.url}>Read more >></a>
       </div>`;
+      document.querySelector(".news-spinner").style.display = "none";
       mediaZone.appendChild(newArticle);
     });
   });
