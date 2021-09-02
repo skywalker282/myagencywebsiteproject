@@ -116,29 +116,31 @@ nav {
 }
 
 .passport {
-  background: $primary;
+  // background: $primary;
   & > h5 {
     @include section-title;
   }
   .passport-content {
     display: flex;
-    justify-content: space-between;
-    padding: 8% 15%;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 5% 8%;
     width: 100%;
     @media screen and (max-width: 840px) {
       flex-direction: column;
       align-items: center;
       &-profile {
         width: 80vw;
-        border: 5px solid $primary-light;
+        border: 5px solid $primary;
       }
     }
     .passport-profile {
       width: 25vw;
-      border: 15px solid $primary-light;
+      border: 15px solid $primary;
       border-radius: 50%;
       overflow: hidden;
       height: 23vw;
+      margin-bottom: 2rem;
       @media screen and (max-width: 840px) {
         border: 5px solid $primary-light;
         margin-bottom: 10%;
@@ -151,21 +153,22 @@ nav {
     .passport-identity {
       display: flex;
       justify-content: center;
-      flex-direction: column;
-      background-color: $primary;
+      align-items: center;
+      // background-color: $primary;
       p {
+        font-family: 'roboto-bold';
         display: flex;
         align-items: center;
         margin: 1em;
         i {
-          font-size: 34px;
-          color: $front;
+          font-size: 28px;
+          color: $primary;
         }
         span {
-          font-family: "roboto-light";
-          font-size: 24px;
+          font-family: 'roboto-bold';
+          font-size: 20px;
           margin-left: 1em;
-          color: $front-light;
+          color: $primary-light;
         }
       }
     }

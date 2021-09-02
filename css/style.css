@@ -251,7 +251,6 @@ input:-internal-autofill-selected {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .about__hero img {
   width: 200px;

@@ -429,9 +429,6 @@ nav .nav-wrapper .brand-logo img {
   margin-bottom: 0 !important;
 }
 
-.passport {
-  background: #0f436e;
-}
 .passport > h5 {
   float: left;
   position: relative;
@@ -451,8 +448,9 @@ nav .nav-wrapper .brand-logo img {
 }
 .passport .passport-content {
   display: flex;
-  justify-content: space-between;
-  padding: 8% 15%;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 5% 8%;
   width: 100%;
 }
 @media screen and (max-width: 840px) {
@@ -462,15 +460,16 @@ nav .nav-wrapper .brand-logo img {
   }
   .passport .passport-content-profile {
     width: 80vw;
-    border: 5px solid #1a70b6;
+    border: 5px solid #0f436e;
   }
 }
 .passport .passport-content .passport-profile {
   width: 25vw;
-  border: 15px solid #1a70b6;
+  border: 15px solid #0f436e;
   border-radius: 50%;
   overflow: hidden;
   height: 23vw;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 840px) {
   .passport .passport-content .passport-profile {
@@ -485,23 +484,23 @@ nav .nav-wrapper .brand-logo img {
 .passport .passport-content .passport-identity {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  background-color: #0f436e;
+  align-items: center;
 }
 .passport .passport-content .passport-identity p {
+  font-family: "roboto-bold";
   display: flex;
   align-items: center;
   margin: 1em;
 }
 .passport .passport-content .passport-identity p i {
-  font-size: 34px;
-  color: #fff;
+  font-size: 28px;
+  color: #0f436e;
 }
 .passport .passport-content .passport-identity p span {
-  font-family: "roboto-light";
-  font-size: 24px;
+  font-family: "roboto-bold";
+  font-size: 20px;
   margin-left: 1em;
-  color: #f7f7f7;
+  color: #1a70b6;
 }
 
 .introduction {
