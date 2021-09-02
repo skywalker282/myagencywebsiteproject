@@ -484,7 +484,9 @@ nav .nav-wrapper .brand-logo img {
 .passport .passport-content .passport-identity {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  margin: auto 5%;
 }
 .passport .passport-content .passport-identity p {
   font-family: "roboto-bold";

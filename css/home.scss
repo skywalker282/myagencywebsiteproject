@@ -153,7 +153,9 @@ nav {
     .passport-identity {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       align-items: center;
+      margin: auto 5%;
       // background-color: $primary;
       p {
         font-family: 'roboto-bold';
