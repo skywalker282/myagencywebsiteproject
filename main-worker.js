@@ -6,6 +6,7 @@ const OFFLINE_STYLE = "css/offline.css";
 self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
+      self.skipWaiting()
       const cache = await caches.open(CACHE_NAME);
       await cache.add(new Request(OFFLINE_STYLE));
       await cache.add(new Request(OFFLINE_URL));
@@ -52,8 +53,8 @@ self.addEventListener("fetch", (event) => {
             return cacheResponse
           }
 
-          const offlineResponse = await cache.on(OFFLINE_URL);
-          
+          const offlineResponse = await cache.match(OFFLINE_URL);
+
           return offlineResponse;
         }
       })()
@@ -62,15 +63,16 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.open(CACHE_NAME).then(async (cache) => {
         const cacheResponse = await cache.match(event.request);
-        const fetchPromise = fetch(event.request).then((networkResponse) => {
-          // if (event.request.url.includes("gnews")) {
-          //   if (networkResponse.articles) {
-          //     cache.put(event.request, networkResponse.clone());
-          //     return networkResponse;
-          //   } else {
-          //     return cacheResponse;
-          //   }
-          // }
+        const fetchPromise = fetch(event.request).then(async (networkResponse) => {
+           if (event.request.url.includes("gnews")) {
+              const result  = await networkResponse.json();
+              const articles = result.articles;
+              if(articles) {
+                return networkResponse;
+              } else {
+                return cacheResponse;
+              }
+            }
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         });
