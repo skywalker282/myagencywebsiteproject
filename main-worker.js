@@ -16,9 +16,9 @@ self.addEventListener("install", (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
-      if ("navigationPreload" in self.registration) {
-        await self.registration.navigationPreload.enable();
-      }
+      // if ("navigationPreload" in self.registration) {
+      //   await self.registration.navigationPreload.enable();
+      // }
     })()
   );
   self.clients.claim();
@@ -32,10 +32,10 @@ self.addEventListener("fetch", (event) => {
       (async () => {
         try {
           // First, try to use the navigation preload response if it's supported.
-          const preloadResponse = await event.preloadResponse;
-          if (preloadResponse) {
-            return preloadResponse;
-          }
+          // const preloadResponse = await event.preloadResponse;
+          // if (preloadResponse) {
+          //   return preloadResponse;
+          // }
 
           const networkResponse = await fetch(event.request);
           return networkResponse;
