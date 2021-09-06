@@ -41,7 +41,7 @@ nav {
 
 .appointment {
   padding: 0;
-  background-color: $front-light;
+  background-color: $front;
   .row {
     margin-bottom: 0px;
   }
@@ -76,7 +76,12 @@ nav {
   .card {
     border-radius: 5px;
     margin-bottom: 6rem;
+    box-shadow: 0px 0px 10px grey;
     // background-color: $primary;
+    p{
+      padding: .5em;
+      overflow-y: scroll;
+    }
 
     ul.stepper .step:not(:last-of-type)::after {
       // background-color: $primary-light !important;
@@ -192,7 +197,7 @@ nav {
         text-align: center;
         color: $primary-light;
         font-size: 20px;
-        margin: 15px 0;
+        margin: 5px 0;
         @media screen and (max-width: 750) {
           padding: 0;
         }

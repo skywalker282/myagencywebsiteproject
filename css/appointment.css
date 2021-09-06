@@ -354,7 +354,7 @@ nav .nav-wrapper .nav-mobile a {
 
 .appointment {
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: #fff;
 }
 .appointment .row {
   margin-bottom: 0px;
@@ -392,6 +392,11 @@ nav .nav-wrapper .nav-mobile a {
 .appointment .card {
   border-radius: 5px;
   margin-bottom: 6rem;
+  box-shadow: 0px 0px 10px grey;
+}
+.appointment .card p {
+  padding: 0.5em;
+  overflow-y: scroll;
 }
 .appointment .card .step-content {
   overflow: hidden !important;
@@ -469,7 +474,7 @@ nav .nav-wrapper .nav-mobile a {
   text-align: center;
   color: #1a70b6;
   font-size: 20px;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 @media screen and (max-width: 750) {
   .appointment .card .step-content p {

@@ -43,7 +43,7 @@ nav {
   padding: 0;
   .overlay {
     background-color: #2195f33d;
-    padding: 2em 0;
+    padding: 2em 0 5em;
     .heading {
       &__title {
         margin: 0;
@@ -117,26 +117,37 @@ nav {
 
 .passport {
   // background: $primary;
+  // position: relative;
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   & > h5 {
     @include section-title;
   }
+  padding: 2%;
+  display: flex;
+  justify-content: center;
   .passport-content {
+    position: relative;
+    top: -100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 3% 5% 8%;
-    width: 100%;
+    width: 90%;
+    border-radius: 35px;
+    background-color: $front;
+    box-shadow: 0px 0px 10px grey;
     @media screen and (max-width: 840px) {
       flex-direction: column;
       align-items: center;
       &-profile {
         width: 80vw;
-        border: 5px solid $primary;
+        // border: 5px solid $primary;
       }
     }
     .passport-profile {
       width: 25vw;
-      border: 15px solid $primary;
+      // border: 15px solid $primary;
       border-radius: 50%;
       overflow: hidden;
       height: 23vw;
@@ -152,10 +163,8 @@ nav {
     }
     .passport-identity {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      margin: auto 5%;
+      flex-direction: column;
+      margin: 0 5%;
       // background-color: $primary;
       p {
         font-family: 'roboto-bold';
@@ -166,10 +175,14 @@ nav {
           font-size: 28px;
           color: $primary;
         }
+        img {
+          width: 30px;
+          border-radius: 5px;
+        }
         span {
-          font-family: 'roboto-bold';
-          font-size: 20px;
-          margin-left: 1em;
+          font-family: 'roboto-light';
+          font-size: 16px;
+          margin-left: .5em;
           color: $primary-light;
         }
       }
