@@ -1,7 +1,7 @@
 //info cards
 const mediaZone = document.querySelector(".article-block");
 
-let random = parseInt(Math.random() * 10);
+let random = Math.floor(parseInt(Math.random() * 10));
 
 fetch(
   `https://gnews.io/api/v4/search?q=africa%20AND%20investment&page=${random}&token=061ecf3ca67a9a953ca6e69439135033`
