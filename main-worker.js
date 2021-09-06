@@ -7,8 +7,8 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
-      await cache.add(new Request(OFFLINE_STYLE, { cache: "reload" }));
-      await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
+      await cache.add(new Request(OFFLINE_STYLE));
+      await cache.add(new Request(OFFLINE_URL));
     })()
   );
 });
@@ -57,14 +57,14 @@ self.addEventListener("fetch", (event) => {
       caches.open(CACHE_NAME).then(async (cache) => {
         const cacheResponse = await cache.match(event.request);
         const fetchPromise = fetch(event.request).then((networkResponse) => {
-          if (event.request.url.includes("gnews")) {
-            if (networkResponse.articles) {
-              cache.put(event.request, networkResponse.clone());
-              return networkResponse;
-            } else {
-              return cacheResponse;
-            }
-          }
+          // if (event.request.url.includes("gnews")) {
+          //   if (networkResponse.articles) {
+          //     cache.put(event.request, networkResponse.clone());
+          //     return networkResponse;
+          //   } else {
+          //     return cacheResponse;
+          //   }
+          // }
           cache.put(event.request, networkResponse.clone());
           return networkResponse;
         });
