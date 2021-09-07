@@ -85,11 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
 let deferredPrompt = null;
 let fireInstall = document.querySelector(".install");
 
-window.addEventListener("beforeinstallprompt", (event) => {
-  event.preventDefault();
-  deferredPrompt = event;
-  fireInstall.classList.remove("hidden");
-});
+// window.addEventListener("beforeinstallprompt", (event) => {
+//   event.preventDefault();
+//   deferredPrompt = event;
+//   fireInstall.classList.remove("hidden");
+// });
 
 fireInstall.addEventListener("click", (event) => {
   if (deferredPrompt) {
