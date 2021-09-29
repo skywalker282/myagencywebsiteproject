@@ -28,7 +28,6 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   //We only want to call event.respondWith() if this is a navigation request
   // for an HTML page.
-  if (event.request.mode === "navigate") {
     event.respondWith(
       (async () => {
         try {
@@ -59,25 +58,4 @@ self.addEventListener("fetch", (event) => {
         }
       })()
     );
-  } else {
-    event.respondWith(
-      caches.open(CACHE_NAME).then(async (cache) => {
-        const cacheResponse = await cache.match(event.request);
-        const fetchPromise = fetch(event.request).then(async (networkResponse) => {
-           if (event.request.url.includes("gnews")) {
-              const result  = await networkResponse.json();
-              const articles = result.articles;
-              if(articles) {
-                return networkResponse;
-              } else {
-                return cacheResponse;
-              }
-            }
-          cache.put(event.request, networkResponse.clone());
-          return networkResponse;
-        });
-        return cacheResponse || fetchPromise;
-      })
-    );
-  }
 });
